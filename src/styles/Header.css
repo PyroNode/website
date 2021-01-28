@@ -1,0 +1,48 @@
+.Header__header {
+  z-index: 1;
+  position: relative;
+  height: 10vh;
+  display: flex;
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+}
+
+.Header__container {
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+}
+
+.Header__img-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  padding-left: 10%;
+}
+
+.Header__img-container img {
+  height: 50%;
+}
+
+.Header__container h1 {
+  display: inline;
+}
+
+.Header__links {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.Header__links p {
+  margin: 0 3.5%;
+  color: white;
+  font-size: 1.27vw;
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Open Sans", "Helvetica Neue", sans-serif;
+  letter-spacing: 1px;
+}

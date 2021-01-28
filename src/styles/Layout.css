@@ -1,0 +1,18 @@
+body {
+  overflow-x: hidden;
+}
+
+.Layout {
+  height: 100%;
+  width: 100%;
+}
+
+.Layout__wave {
+  z-index: 0;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 35%;
+  height: 100%;
+  transform: rotate(-110deg);
+}
