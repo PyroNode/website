@@ -10,7 +10,6 @@ const Layout = ({ children }) => (
   <div className="Layout">
     <Header />
     {children}
-    <Footer />
 
     <Wave
       className="Layout__wave wave-2"
@@ -35,6 +34,8 @@ const Layout = ({ children }) => (
         points: 3,
       }}
     />
+
+    <Footer />
   </div>
 );
 

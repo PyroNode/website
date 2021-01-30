@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const PickingUsItem = ({ content }) => {
   return (
     <>
-      <div className="pickUsItem__container">
+      <div className="pickUsItem">
         <div className="pickUsItem__upperZone">
           <img src={content.photo} alt={content.title} />
           <h1>{content.title.toUpperCase()}</h1>
