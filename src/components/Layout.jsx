@@ -19,7 +19,7 @@ const Layout = ({ children }) => (
       options={{
         height: 50,
         amplitude: 70,
-        speed: 0.25,
+        speed: 0.185,
         points: 5,
       }}
     />
@@ -31,7 +31,7 @@ const Layout = ({ children }) => (
       options={{
         height: 55,
         amplitude: 75,
-        speed: 0.25,
+        speed: 0.185,
         points: 3,
       }}
     />
