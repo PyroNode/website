@@ -5,9 +5,10 @@ import { connect } from "react-redux";
 import Carousel from "../components/Carousel";
 import PickingUs from "../components/PickingUs";
 import TrustPilotCarousel from "../components/TrustPilotCarousel";
-import TrustBoxContainer from "../components/external/TrustBoxContainer";
+import Zoom from "react-reveal/Zoom";
 
 const Home = ({ carousel, pickus, trustpilot }) => {
+
   return (
     <>
       <div className="Home">

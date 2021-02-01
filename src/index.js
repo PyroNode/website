@@ -84,7 +84,7 @@ const initialState = {
 
     {
       id: 1,
-      username: "All o",
+      username: "Ali o",
       userphoto: "https://i.imgur.com/BGO38nc.png",
       review_title: "Legit, efectivida",
       review_desc:

@@ -34,9 +34,9 @@
   flex-direction: column;
 }
 
+
 .pickUsItem {
   height: 33.3%;
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;

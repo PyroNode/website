@@ -35,7 +35,6 @@ const TrustPilotCarousel = ({ items, active_item, setActiveTPItem }) => {
     return function clean() {
       clearInterval(intervalID);
       intervalID = 0;
-      console.log("terminando");
     };
   }, [index]);
 
@@ -49,7 +48,6 @@ const TrustPilotCarousel = ({ items, active_item, setActiveTPItem }) => {
   };
 
   const handleUpIndex = () => {
-    console.log("ejecuto");
     let i = index;
 
     i >= items.length - 1 ? (i = 0) : (i += 1);
@@ -61,7 +59,6 @@ const TrustPilotCarousel = ({ items, active_item, setActiveTPItem }) => {
   const automaticUpIndex = () => {
     intervalID = setInterval(() => {
       handleUpIndex();
-      console.log("Iniciando");
     }, 3500);
   };
 
