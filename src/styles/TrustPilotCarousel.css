@@ -1,0 +1,152 @@
+.TrustPilot__Carousel {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.5%;
+  height: 25vw;
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Open Sans", "Helvetica Neue", sans-serif;
+  flex-direction: column;
+}
+
+.TrustPilot__zIndex {
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.TrustPilot__valoration h1 {
+  font-size: 2.2vw;
+}
+
+.TrustPilot__valoration img {
+  height: 20%;
+  width: 85%;
+  margin-bottom: 20%;
+}
+
+.TrustPilot__review {
+  width: 90%;
+  height: 110%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.TrustPilot__container {
+  margin-bottom: 2%;
+}
+
+.TPItem__all {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 3.5%;
+  flex-direction: column;
+}
+
+.TPItem__valoration {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.TPItem__valoration img {
+  width: calc(100% / 12);
+}
+
+.TPItem__info {
+  width: 100%;
+  height: 60%;
+}
+
+.TPItem__info h1 {
+  font-size: 2.2vw;
+  margin-bottom: 3.5%;
+}
+
+.TPItem__info p {
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.35vw;
+}
+
+blockquote {
+  border-left: 1vw solid #ccc;
+  margin: 1%;
+  padding: 0.5em 10px;
+}
+
+blockquote:before {
+  color: #ccc;
+  font-size: 5vw;
+  line-height: 0.1em;
+  vertical-align: -0.4em;
+}
+
+blockquote:after {
+  color: #ccc;
+  font-size: 5vw;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.5em;
+}
+
+blockquote p {
+  display: inline;
+}
+
+blockquote blockquote {
+  border-left: none;
+}
+
+blockquote blockquote:before {
+  content: "“";
+}
+blockquote blockquote:after {
+  content: "”";
+}
+
+.TPItem__user {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 5%;
+}
+
+.TPItem__user p {
+  margin-left: 5%;
+  margin-top: 1%;
+  font-size: 1.5vw;
+  font-weight: bold;
+}
+
+.TrustPilot__button {
+  height: 100%;
+}
+
+.TrustPilot__button img {
+  height: 20.5%;
+  position: relative;
+  top: calc(50% - 20.5%);
+}
+
+.button1 img {
+  left: 450%;
+}
+
+.button2 img {
+  right: 450%;
+}

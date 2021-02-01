@@ -38,13 +38,7 @@
   opacity: 1;
 }
 
-.active {
-  opacity: 0;
-}
 
-.transition {
-  transition: 0.5s;
-}
 
 .CarouselItem__grid {
   display: grid;

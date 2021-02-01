@@ -5,10 +5,10 @@
 
 .Layout__wave {
   z-index: 0;
-  width: 100%;
+  width: 200% !important;
   position: absolute;
-  top: 0;
-  left: 35%;
+  top: 10%;
+  left: calc(-5% + -10vw);
   height: 100%;
-  transform: rotate(-110deg);
+  transform: rotate(-105deg);
 }

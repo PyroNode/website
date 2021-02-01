@@ -14,12 +14,6 @@ const PickingUsItem = ({ content }) => {
 
         <div className="pickUsItem__downZone">
           <p>{content.desc}</p>
-          <Link
-            className="pickUsItem__button"
-            to={content.buttonUrl !== undefined ? content.buttonUrl : "/"}
-          >
-            {content.buttonText}
-          </Link>
         </div>
       </div>
     </>

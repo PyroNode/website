@@ -2,7 +2,9 @@ import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 import Home from "../Pages/Home";
-import Layout from "./Layout"
+import Layout from "./Layout";
+
+import "../styles/Animations.css";
 
 const App = () => {
   return (

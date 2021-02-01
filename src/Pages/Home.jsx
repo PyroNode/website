@@ -4,13 +4,16 @@ import "../styles/Home.css";
 import { connect } from "react-redux";
 import Carousel from "../components/Carousel";
 import PickingUs from "../components/PickingUs";
+import TrustPilotCarousel from "../components/TrustPilotCarousel";
+import TrustBoxContainer from "../components/external/TrustBoxContainer";
 
-const Home = ({ carousel, pickus }) => {
+const Home = ({ carousel, pickus, trustpilot }) => {
   return (
     <>
       <div className="Home">
         <Carousel items={carousel} />
         <PickingUs items={pickus} />
+        <TrustPilotCarousel items={trustpilot} />
       </div>
     </>
   );
@@ -20,6 +23,7 @@ const mapStateToProps = (state) => {
   return {
     carousel: state.carousel,
     pickus: state.pickus,
+    trustpilot: state.trustpilot,
   };
 };
 
