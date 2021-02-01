@@ -1,6 +1,7 @@
 import React from "react";
 
 import PickingUsItem from "./PickingUsItem";
+import Fade from "react-reveal/Fade";
 const PickingUs = ({ items }) => {
   return (
     <div className="pickUs__all">
