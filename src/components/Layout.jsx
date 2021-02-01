@@ -6,37 +6,42 @@ import Footer from "./Footer";
 
 import "../styles/Layout.css";
 import "../styles/Animations.css";
-const Layout = ({ children }) => (
-  <div className="Layout">
-    <Header />
-    {children}
+const Layout = (props) => {
+  const children = props.children;
+  console.log(children);
+  console.log(props);
+  return (
+    <div className="Layout">
+      <Header dark={false}/>
+      {children}
 
-    <Wave
-      className="Layout__wave wave-2"
-      fill="#D25A1E"
-      paused={false}
-      options={{
-        height: 50,
-        amplitude: 70,
-        speed: 0.185,
-        points: 5,
-      }}
-    />
+      <Wave
+        className="Layout__wave wave-2"
+        fill="#D25A1E"
+        paused={false}
+        options={{
+          height: 50,
+          amplitude: 70,
+          speed: 0.185,
+          points: 5,
+        }}
+      />
 
-    <Wave
-      className="Layout__wave"
-      fill="#F46923"
-      paused={false}
-      options={{
-        height: 55,
-        amplitude: 75,
-        speed: 0.185,
-        points: 3,
-      }}
-    />
+      <Wave
+        className="Layout__wave"
+        fill="#F46923"
+        paused={false}
+        options={{
+          height: 55,
+          amplitude: 75,
+          speed: 0.185,
+          points: 3,
+        }}
+      />
 
-    <Footer />
-  </div>
-);
+      <Footer />
+    </div>
+  );
+};
 
 export default Layout;

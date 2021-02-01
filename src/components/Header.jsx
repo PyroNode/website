@@ -1,13 +1,19 @@
 import React from "react";
 
-import "../styles/Header.css"
+import "../styles/Header.css";
 //static
-import logo from "../static/logo.png"
+import logo from "../static/logo.png";
 
-const Header = () => {
+import classNames from "classnames";
+
+const Header = ({ dark }) => {
+  const headerClass = classNames("Header__header", {
+    dark,
+  });
+
   return (
     <>
-      <header className="Header__header">
+      <header className={headerClass}>
         <div className="Header__container">
           <div className="Header__img-container">
             <img src={logo} alt="Pyronode" />

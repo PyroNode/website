@@ -5,17 +5,19 @@ import { connect } from "react-redux";
 import Carousel from "../components/Carousel";
 import PickingUs from "../components/PickingUs";
 import TrustPilotCarousel from "../components/TrustPilotCarousel";
+import Layout from "../components/Layout";
 import Zoom from "react-reveal/Zoom";
 
 const Home = ({ carousel, pickus, trustpilot }) => {
-
   return (
     <>
-      <div className="Home">
-        <Carousel items={carousel} />
-        <PickingUs items={pickus} />
-        <TrustPilotCarousel items={trustpilot} />
-      </div>
+      <Layout>
+        <div className="Home">
+          <Carousel items={carousel} />
+          <PickingUs items={pickus} />
+          <TrustPilotCarousel items={trustpilot} />
+        </div>
+      </Layout>
     </>
   );
 };

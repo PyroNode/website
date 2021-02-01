@@ -8,6 +8,11 @@
   align-items: center;
 }
 
+.dark {
+  background: rgba(35, 39, 42, 1);
+  color: white;
+}
+
 .Header__container {
   width: 50%;
   height: 100%;
@@ -27,6 +32,7 @@
 }
 
 .Header__container h1 {
+  font-size: 2.5vw;
   display: inline;
 }
 
