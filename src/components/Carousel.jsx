@@ -6,6 +6,7 @@ import left from "../static/left-arrow.png";
 import right from "../static/right-arrow.png";
 
 import "../styles/Carousel.css";
+import CarouselDotsControler from "./CarouselDotsControler";
 
 const Carousel = ({ items, setActiveCarouselItem, active_item }) => {
   const [index, setIndex] = useState(0);
@@ -66,6 +67,7 @@ const Carousel = ({ items, setActiveCarouselItem, active_item }) => {
             <img src={left} alt="" />
           </div>
         </div>
+        <CarouselDotsControler index={index} arrayLength={items.length} />
       </div>
     </>
   );

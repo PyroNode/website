@@ -9,6 +9,8 @@
     "Open Sans", "Helvetica Neue", sans-serif;
   color: white;
   margin-top: 5%;
+  position: relative;
+  z-index: 2;
 }
 
 .footer__redes {
@@ -51,7 +53,6 @@
   display: flex;
   justify-content: space-evenly;
 }
-
 
 .footer__logo {
   display: flex;

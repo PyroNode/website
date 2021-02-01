@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 .Layout {
   height: 100%;
   width: 100%;
@@ -5,10 +9,10 @@
 
 .Layout__wave {
   z-index: 0;
-  width: 200% !important;
+  width: 250% !important;
   position: absolute;
-  top: 10%;
-  left: calc(-5% + -10vw);
+  top: 5%;
+  left: calc(-30% + -10vw);
   height: 100%;
   transform: rotate(-105deg);
 }

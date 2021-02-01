@@ -5,7 +5,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 
 import "../styles/Layout.css";
-
+import "../styles/Animations.css";
 const Layout = ({ children }) => (
   <div className="Layout">
     <Header />

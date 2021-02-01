@@ -8,6 +8,12 @@
   z-index: 2;
   font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Open Sans", "Helvetica Neue", sans-serif;
+  flex-direction: column;
+}
+
+.Carousel .dots__container{
+  position: relative;
+  bottom: 10%
 }
 
 .Carousel__zIndex {
@@ -37,8 +43,6 @@
   justify-items: center;
   opacity: 1;
 }
-
-
 
 .CarouselItem__grid {
   display: grid;

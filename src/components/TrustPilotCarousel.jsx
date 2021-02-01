@@ -7,6 +7,7 @@ import left from "../static/left-arrow.png";
 import right from "../static/right-arrow.png";
 
 import "../styles/TrustPilotCarousel.css";
+import CarouselDotsControler from "./CarouselDotsControler";
 
 const TrustPilotCarousel = ({ items, active_item, setActiveTPItem }) => {
   const [index, setIndex] = useState(0);
@@ -85,6 +86,8 @@ const TrustPilotCarousel = ({ items, active_item, setActiveTPItem }) => {
             <img src={left} alt="" />
           </div>
         </div>
+        <CarouselDotsControler index={index} arrayLength={items.length} />
+
         <div className="TrustPilot__container">
           <TrustPilotContainer />
         </div>
