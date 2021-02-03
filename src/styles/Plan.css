@@ -1,0 +1,139 @@
+.Plan {
+  background: rgba(35, 39, 42, 1);
+  border-radius: 30px;
+  height: 95%;
+  width: 70%;
+  padding: 5%;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Open Sans", "Helvetica Neue", sans-serif;
+  position: relative;
+  flex-direction: column;
+}
+
+.Plan__upper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 55%;
+  width: 100%;
+  position: relative;
+  margin-top: 3.5%;
+}
+
+.Plan__upper img {
+  height: 40%;
+  width: auto;
+}
+
+.Plan__price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Plan__upper p {
+  font-size: 1.3vw;
+  position: relative;
+  bottom: 5%;
+}
+
+.Plan__upper #title {
+  color: #e87840;
+  font-size: 2.1vw;
+  position: relative;
+  bottom: -2%;
+}
+
+.Plan__upper h1 {
+  font-size: 5.3vw;
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Open Sans", "Helvetica Neue", sans-serif;
+  position: relative;
+  bottom: 2%;
+}
+
+.Plan__upper span {
+  font-size: 1.3vw;
+  position: relative;
+  bottom: -8%;
+}
+
+.Plan__down {
+  width: 100%;
+  height: 45%;
+  margin-bottom: 3.5%;
+}
+
+.Plan__desc {
+  height: 60%;
+  justify-items: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2%;
+  margin-top: 7.5%;
+}
+
+.Plan__desc-item {
+  width: 100%;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 6%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.Plan__desc-key {
+  width: 60%;
+}
+
+.Plan__desc-value {
+  width: 40%;
+}
+
+.Plan__desc-key p,
+.Plan__desc-value p {
+  font-size: 1.3vw;
+}
+
+.Plan__desc-value {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.Plan__button {
+  background: #e87840;
+  border-radius: 5px;
+  padding: 0.5% 10%;
+  text-align: center;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 13%;
+}
+
+.Plan__button h1 {
+  color: white;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 300;
+  font-size: 2.2vw;
+}
+
+.Plan__transition {
+  transition: 0.4s;
+}
+
+.Plan__buttonColor {
+  background-color: white;
+}
+
+.Plan__buttonColor h1{
+  color: black;
+}

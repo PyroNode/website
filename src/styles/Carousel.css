@@ -53,6 +53,7 @@
   align-content: center;
 }
 
+
 .CarouselItem__info {
   width: 100%;
   grid-column: span 1;

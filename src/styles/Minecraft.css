@@ -1,0 +1,24 @@
+.Minecraft__Page {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+
+.Minecraft__hero-container {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 2%;
+  width: 100%;
+  height: 55vh;
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Open Sans", "Helvetica Neue", sans-serif;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Minecraft__hero {
+  width: 60%;
+  height: 100%;
+}

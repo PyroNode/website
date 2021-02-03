@@ -8,6 +8,10 @@
   align-items: center;
 }
 
+.Header__header a {
+  text-decoration: none;
+}
+
 .dark {
   background: rgba(35, 39, 42, 1);
   color: white;
@@ -17,6 +21,14 @@
   width: 50%;
   height: 100%;
   display: inline-block;
+}
+
+.Header__container a {
+  color: black;
+}
+
+.dark a {
+  color: white;
 }
 
 .Header__img-container {

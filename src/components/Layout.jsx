@@ -1,6 +1,7 @@
 import React from "react";
 import Wave from "react-wavify";
 
+
 import Header from "./Header";
 import Footer from "./Footer";
 
@@ -8,11 +9,10 @@ import "../styles/Layout.css";
 import "../styles/Animations.css";
 const Layout = (props) => {
   const children = props.children;
-  console.log(children);
-  console.log(props);
+
   return (
     <div className="Layout">
-      <Header dark={false}/>
+      <Header dark={props.headerDark} />
       {children}
 
       <Wave

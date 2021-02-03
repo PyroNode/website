@@ -3,7 +3,7 @@ import React from "react";
 import "../styles/Carousel.css";
 import { Link } from "react-router-dom";
 
-const CarouselItem = ({ content }) => {
+const CarouselItem = ({ content, isInPage }) => {
   const titleArr = content.title.toUpperCase().split("\n");
 
   return (
@@ -15,9 +15,21 @@ const CarouselItem = ({ content }) => {
           <h2>{content.subtitle}</h2>
           <p>{content.desc}</p>
 
-          <Link className="CarouselItem__td" to={content.buttonUrl !== undefined ? content.buttonUrl : "/"}>
-            <span className="CarouselItem__button">Ver más</span>
-          </Link>
+          {!isInPage ? (
+            <Link
+              className="CarouselItem__td"
+              to={content.buttonUrl !== undefined ? content.buttonUrl : "/"}
+            >
+              <span className="CarouselItem__button">Ver más</span>
+            </Link>
+          ) : (
+            <a
+              className="CarouselItem__td"
+              href={content.buttonUrl !== undefined ? content.buttonUrl : "#"}
+            >
+              <span className="CarouselItem__button">{content.buttonText}</span>
+            </a>
+          )}
         </div>
         <div className="CarouselItem__photo">
           <img src={content.photo} alt="" />

@@ -1,62 +1,52 @@
 import React from "react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import Wave from "react-wavify";
 
 import "../styles/NotFound.css";
+import logo from "../static/logo.png";
 import { Link } from "react-router-dom";
 
 const NotFound = () => (
   <>
     <Header dark />
     <div className="NotFound">
-      <main className="bg-purple">
-        <div className="stars">
-          <div className="central-body">
-            <img
-              className="image-404"
-              src="http://salehriaz.com/404Page/img/404.svg"
-              width="300px"
-            />
-            <Link to="/" className="btn-go-home">
-              VOLVER AL HOME
-            </Link>
-          </div>
-          <div className="objects">
-            <img
-              className="object_rocket"
-              src="http://salehriaz.com/404Page/img/rocket.svg"
-              width="40px"
-            />
-            <div className="earth-moon">
-              <img
-                className="object_earth"
-                src="http://salehriaz.com/404Page/img/earth.svg"
-                width="100px"
-              />
-              <img
-                className="object_moon"
-                src="http://salehriaz.com/404Page/img/moon.svg"
-                width="80px"
-              />
-            </div>
-            <div className="box_astronaut">
-              <img
-                className="object_astronaut"
-                src="http://salehriaz.com/404Page/img/astronaut.svg"
-                width="140px"
-              />
-            </div>
-          </div>
-          <div className="glowing_stars">
-            <div className="star"></div>
-            <div className="star"></div>
-            <div className="star"></div>
-            <div className="star"></div>
-            <div className="star"></div>
+      <div className="textContainer">
+        <img src={logo} alt="Pyronode" />
+        <div className="NotFound__text">
+          <h1>Oops!</h1>
+          <p>Esta URL no existe...</p>
+          <div className="NotFound__button">
+            <Link to="/">Regresar al Home</Link>
           </div>
         </div>
-      </main>
+      </div>
     </div>
+
+    <Wave
+      className="NotFound__wave wave-2"
+      fill="#D25A1E"
+      paused={false}
+      options={{
+        height: 50,
+        amplitude: 70,
+        speed: 0.185,
+        points: 5,
+      }}
+    />
+
+    <Wave
+      className="NotFound__wave"
+      fill="#F46923"
+      paused={false}
+      options={{
+        height: 55,
+        amplitude: 75,
+        speed: 0.185,
+        points: 3,
+      }}
+    />
+
     <Footer />
   </>
 );
