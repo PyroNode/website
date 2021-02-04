@@ -5,15 +5,15 @@
   align-items: center;
   height: 45vw;
   flex-direction: column;
+  display: none;
 }
 
 .Plans__grid {
-  height: 100%;
-  width: 70%;
+  height: 80%;
+  width: 60%;
   display: grid;
   grid-template-columns: repeat(2, minmax(300px, 45%));
   grid-template-rows: minmax(350px, 100%);
-
   justify-items: center;
   align-items: center;
   justify-content: center;
@@ -32,17 +32,20 @@
 }
 
 .PlanDetails__modal {
-  width: 85%;
-  height: 80vw;
-  border: 1px solid red;
+  width: 80%;
+  height: 120vw;
   background: rgba(35, 39, 42, 1);
   border-radius: 20px;
+  margin-bottom: 5%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .PlanDetails__columns {
-  width: 100%;
-  height: 35%;
-  margin-top: 2.5%;
+  width: 80%;
+  height: 10%;
+  margin-top: 3.5%;
   padding: 0 2.5%;
 }
 
@@ -55,6 +58,14 @@
   align-items: center;
 }
 
+.PlanDetails__firstColumn {
+  margin-bottom: 2%;
+}
+
+.PlanDetails__columns {
+  margin-bottom: 7.5%;
+}
+
 .PlanDetails__item {
   display: flex;
   align-items: center;
@@ -64,14 +75,52 @@
 }
 
 .PlanDetails__item img {
-  height: 40%;
+  height: 45%;
 }
 
 .PlanDetails__item h1 {
   color: white;
-  font-size: 1.5vw;
+  font-size: 1.2vw;
   font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 300;
   margin-top: 5%;
+}
+
+.PlanDetails__machines {
+  margin-top: 1.5%;
+  width: 100%;
+  height: 78.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.PlanDetails__machines-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 100%;
+  width: 75%;
+  color: white;
+}
+
+.PlanDetails__machines-grid_info {
+  grid-row: span 1;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.PlanDetails__machines-grid_info > h1 {
+  margin-left: 22.3%;
+  font-size: 2vw;
+}
+
+.PlanDetails__machines-grid_info > h1:first-child {
+  margin-left: 5%;
+}
+
+.PlanDetails__machines-grid_info > h1:last-child {
+  margin-left: 21.5%;
 }

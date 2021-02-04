@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { connect } from "react-redux";
 import Plan from "../components/Plan";
-import Fade from "react-reveal/Fade";
+import { Fade } from "react-awesome-reveal";
 import "../styles/PlansController.css";
 import PlanDetails from "./PlanDetails";
 
-const PlansController = ({ plans, activePlans, activePlan }) => {
+const PlansController = ({ plans, activePlans }) => {
   const [index, setIndex] = useState(0);
   const [change, setChange] = useState(false);
   let taskId = 0;
@@ -48,8 +48,8 @@ const PlansController = ({ plans, activePlans, activePlan }) => {
         </div>
       </div>
       <div className="Plans__container-details">
-        <Fade down>
-          <PlanDetails change={change} content={plans[index]} />
+        <Fade className="react-reveal">
+          <PlanDetails change={change} content={plans[index]} />  
         </Fade>
       </div>
     </>
