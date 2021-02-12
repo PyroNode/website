@@ -1,7 +1,7 @@
 import React from "react";
 
 import tw from "../static/tw.png";
-import ig from "../static/ig.png";
+import { Link } from "react-router-dom";
 import logo from "../static/logo.png";
 
 import "../styles/Footer.css";
@@ -21,7 +21,10 @@ const Footer = () => {
         <div className="footer__links">
           <div className="footer__column">
             <h1>SERVICIOS</h1>
-            <p>Servidores Minecraft</p>
+            <Link to="/minecraft">
+              <p>Servidores Minecraft</p>
+            </Link>
+
             <p>Servidores VPS</p>
             <p>Bots de Discord</p>
             <p>Hosting Web</p>

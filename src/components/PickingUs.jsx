@@ -10,10 +10,10 @@ const PickingUs = ({ items }) => {
           <h1>¿PORQUÉ ELEGIR PYRONODE?</h1>
         </div>
 
-        <Fade right cascade >
+        <Fade right cascade>
           <div className="pickUs__itemContainer">
             {items.map((item) => {
-              return <PickingUsItem key={item.id} content={item} />;
+              return <PickingUsItem isRight key={item.id} content={item} />;
             })}
           </div>
         </Fade>

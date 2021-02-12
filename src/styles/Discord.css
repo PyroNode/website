@@ -1,0 +1,341 @@
+.Discord__Page {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+
+.Discord__hero-container {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 2%;
+  width: 100%;
+  height: 55vh;
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Open Sans", "Helvetica Neue", sans-serif;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Discord__hero {
+  width: 60%;
+  height: 100%;
+}
+
+.Discord__features {
+  height: 35vw;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: row;
+}
+
+.Discord__fade {
+  width: 18.5%;
+  height: 100%;
+  margin-right: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: row;
+}
+
+.Discord__FeatureItem {
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(35, 39, 42, 1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
+  border-radius: 10px;
+  width: 85%;
+  padding: 1%;
+}
+
+.Discord__fade:last-child {
+  margin-right: 0;
+}
+
+.Discord__upperZone {
+  height: 35%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Discord__upperZone img {
+  height: 4vw;
+  padding: 1%;
+  margin-top: 5%;
+}
+
+.Discord__upperZone h1 {
+  margin-top: 3.5%;
+  color: white;
+  font-size: 2vw;
+}
+
+.Discord__downZone {
+  height: 65%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Discord__downZone p {
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Open Sans", "Helvetica Neue", sans-serif;
+  color: white;
+  font-size: 1vw;
+  width: 85%;
+  margin-bottom: 2%;
+}
+
+.Discord__plans {
+  height: 45vw;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Discord__plans-container {
+  height: 90%;
+  width: 75%;
+  background-color: rgba(35, 39, 42, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 8px;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.Discord__plans-upper {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Discord__plans-lower {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Discord__plans-upperPlan {
+  width: 40%;
+  height: 80%;
+  background-color: white;
+  margin-right: 10%;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+}
+
+.Discord__plans-upperPlan:last-child {
+  margin-right: 0;
+}
+
+.Discord__plans-upperPlan-left {
+  height: 100%;
+  width: 45%;
+  background-color: rgb(244, 105, 35);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.Discord__plans-upperPlan-right {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Discord__plans-upperPlan-features {
+  width: 85%;
+}
+
+.Discord__plans-upperPlan-features-item {
+  width: 100%;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 6%;
+  border-bottom: 1px solid rgba(0, 0, 0, 1);
+}
+
+.Discord__plans-upperPlan-features-item-key {
+  width: 60%;
+}
+
+.Discord__plans-upperPlan-features-item-value {
+  width: 40%;
+}
+
+.Discord__plans-upperPlan-features-item-key p,
+.Discord__plans-upperPlan-features-item-value p {
+  font-size: 1.5vw;
+}
+
+.Discord__plans-upperPlan-features-item-value {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.Discord__plans-upperPlan-price {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 18%;
+}
+
+.Discord__plans-upperPlan-price > p {
+  font-size: 1vw;
+}
+
+.Discord__plans-upperPlan-price p:first-child {
+  position: relative;
+  top: 7.5%;
+}
+
+.Discord__plans-upperPlan-price p:last-child {
+  position: relative;
+  bottom: 3.5%;
+}
+
+.Discord__plans-upperPlan-price h1 {
+  font-size: 2.7vw;
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.Discord__plans-upperPlan-button {
+  height: 17.5%;
+  width: 80%;
+  border-radius: 12px;
+  background-color: rgba(35, 39, 42, 1);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 18%;
+}
+
+.Discord__plans-upperPlan-button > p {
+  font-size: 1.1vw;
+}
+
+.Discord__plans-upperPlan-left > h1 {
+  font-size: 2vw;
+  margin-top: 2%;
+  color: white;
+}
+
+.Discord__plans-lowerPlan {
+  width: 90%;
+  height: 40%;
+  background-color: white;
+  margin-top: 2%;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Discord__plans-lowerPlan:first-child {
+  margin-top: 0;
+}
+
+.Discord__plans-lowerPlan-button {
+  height: 30%;
+  width: 60%;
+  border-radius: 12px;
+  background-color: rgba(35, 39, 42, 1);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8.5%;
+}
+
+.Discord__plans-lowerPlan-left {
+  height: 100%;
+  width: 25%;
+  background-color: rgb(244, 105, 35);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.Discord__plans-lowerPlan-left h1 {
+  font-size: 2vw;
+  color: white;
+}
+
+.Discord__plans-lowerPlan-right {
+  width: 75%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Discord__plans-lowerPlan-right > div {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Discord__plans-lowerPlan-right > div .Discord__plans-lowerPlan-features-item {
+  width: 25%;
+  text-align: center;
+}
+
+.Discord__plans-lowerPlan-right-up p {
+  font-size: 1.8vw;
+  margin-bottom: 5%;
+}
+
+.Discord__plans-lowerPlan-right-down p {
+  font-size: 2.2vw;
+  font-weight: bold;
+  margin-bottom: 5%;
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.Discord__Page a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 1.6vw;
+}

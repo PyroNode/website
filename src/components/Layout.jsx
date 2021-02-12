@@ -1,7 +1,6 @@
 import React from "react";
 import Wave from "react-wavify";
 
-
 import Header from "./Header";
 import Footer from "./Footer";
 
@@ -9,6 +8,7 @@ import "../styles/Layout.css";
 import "../styles/Animations.css";
 const Layout = (props) => {
   const children = props.children;
+  const styles = props.optionalStyles;
 
   return (
     <div className="Layout">
@@ -17,6 +17,7 @@ const Layout = (props) => {
 
       <Wave
         className="Layout__wave wave-2"
+        style={styles}
         fill="#D25A1E"
         paused={false}
         options={{
@@ -29,6 +30,7 @@ const Layout = (props) => {
 
       <Wave
         className="Layout__wave"
+        style={styles}
         fill="#F46923"
         paused={false}
         options={{

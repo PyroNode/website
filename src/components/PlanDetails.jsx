@@ -24,10 +24,6 @@ const PlanDetails = ({ content, change }) => {
     width: "85%",
   };
 
-  const CardsClass = "MachineItem__card";
-
-  const SingleClass = "MachineItem__single";
-
   //columns filter method
   content.include.feature.map((item) => {
     Math.ceil(content.include.feature.length / 2) >=

@@ -9,7 +9,7 @@ body {
 
 .Layout__wave {
   z-index: 0;
-  width: 250% !important;
+  width: 250%;
   position: absolute;
   top: 5%;
   left: calc(-30% + -10vw);

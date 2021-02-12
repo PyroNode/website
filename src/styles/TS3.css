@@ -1,0 +1,317 @@
+.TS3__Page {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+
+.TS3__container {
+  width: 100%;
+  height: 100%;
+}
+
+.TS3__hero-container {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 2%;
+  width: 100%;
+  height: 55vh;
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Open Sans", "Helvetica Neue", sans-serif;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.TS3__hero {
+  width: 60%;
+  height: 100%;
+}
+
+.TS3__features {
+  height: 45vw;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: row;
+}
+
+.TS3__features-container {
+  height: 90%;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(35, 39, 42, 1);
+  color: white;
+  flex-direction: column;
+  border-radius: 12px;
+}
+
+.TS3__features-title {
+  font-size: 2.7vw;
+  margin-top: 2%;
+}
+
+.TS3__features-list {
+  height: 85%;
+  width: 85%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0px, 50%));
+  grid-template-rows: repeat(2, minmax(0px, 50%));
+  row-gap: 5%;
+  column-gap: 3%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.TS3_featureItemContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.TS3__featureItem {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgb(244, 105, 35);
+  border: 2px solid white;
+  border-radius: 8px;
+}
+
+.TS3__content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: 1s;
+}
+
+.TS3__content-active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 0%;
+  opacity: 0;
+  transition: 1s;
+}
+
+.TS3__content > h1 {
+  margin-bottom: 2%;
+  opacity: 1;
+  font-size: 2.4vw;
+  transition: 0.2s;
+}
+
+.TS3__content-active > div {
+  width: 100%;
+  height: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.TS3__content-active .TS3__content-title {
+  height: 25%;
+}
+
+.TS3__featureItem:hover .TS3__content-active {
+  opacity: 1;
+  height: 100%;
+}
+
+.TS3__featureItem .TS3__content-active p {
+  opacity: 0;
+  transition: 0.3s;
+  transition-delay: 0.2s;
+}
+
+.TS3__featureItem:hover .TS3__content-active p {
+  opacity: 1;
+}
+
+.TS3__featureItem:hover .TS3__content {
+  opacity: 0;
+  height: 0;
+}
+
+.TS3__featureItem:hover .TS3__content > h1 {
+  opacity: 0;
+}
+
+.TS3__content-title-border {
+  font-size: 1.5vw;
+  border-bottom: 1px solid white;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.TS3__content-desc {
+  padding: 0 15%;
+  font-size: 1vw;
+}
+
+.TS3__plans {
+  height: 27.5vw;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  flex-direction: row;
+  margin-bottom: 5%;
+  margin-top: 2%;
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.TS3PlanItem__item {
+  width: 35%;
+  height: 100%;
+  background: rgba(35, 39, 42, 1);
+  border-radius: 8px;
+}
+
+.TS3PlanItem__container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.TS3PlanItem__info {
+  width: 100%;
+  height: 40%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  text-align: start;
+}
+
+.TS3PlanItem__titleSide {
+  width: 65%;
+  height: 100%;
+  position: relative;
+  margin-top: 3%;
+}
+
+.TS3PlanItem__titleSide h1,
+.TS3PlanItem__titleSide p {
+  padding-left: 20%;
+}
+
+.TS3PlanItem__titleSide h1 {
+  font-size: 2.6vw;
+}
+
+.TS3PlanItem__titleSide p {
+  font-size: 1.3vw;
+  position: relative;
+  bottom: 2.5%;
+  left: 1%;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.TS3PlanItem__priceSide {
+  width: 35%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  margin-top: 3%;
+}
+.TS3PlanItem__priceSide > p {
+  font-size: 2.5vw;
+  margin-bottom: 2%;
+}
+
+.TS3PlanItem__priceSide > span {
+  font-size: 1.3vw;
+}
+
+.TS3PlanItem__priceButton {
+  width: 80%;
+  height: 25%;
+  background: rgb(244, 105, 35);
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.TS3PlanItem__priceButton > p {
+  font-size: 1.4vw;
+}
+
+.TS3PlanItem__titleSide img {
+  width: 18%;
+  margin-left: 20%;
+  margin-top: 5%;
+}
+
+.TS3Planitem__buttonSide {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.TS3PlanItem__button-container {
+  width: 75%;
+  height: 55%;
+  border: 2px solid rgb(244, 105, 35);
+  box-shadow: 0px 0px 2.5px 0px rgb(244 105 35);
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.TS3PlanItem__button-container h1 {
+  font-size: 1.4vw;
+}
+
+.TS3PlanItem__desc {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  color: white;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.TS3PlanItem_descItem {
+  margin-left: 13.5%;
+  font-size: 1.4vw;
+}

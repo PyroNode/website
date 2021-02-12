@@ -588,6 +588,185 @@ const initialState = {
         ],
       },
     },
+    discord: {
+      hero: {
+        title: "Bots de Discord",
+        subtitle: "Muy sencillo",
+        desc:
+          "No tienes que ser un ingeniero para poder alojar tu bot de discord. En Pyronode te facilitamos todo para que solo tengas que programar, y divertirte",
+        photo:
+          "https://i.ibb.co/YhVz6BY/b941bc1dfe379db6cc1f2acc5a612f41-4x-1.png",
+        buttonUrl: "#planes",
+        buttonText: "Ver planes",
+      },
+      plans: {
+        features: [
+          {
+            id: 0,
+            title: "Siempre online",
+            desc:
+              "Nos hemos encargado de que tus servidores sean accesibles 24/7, con el mejor rendimiento posible.",
+            photo: "https://i.imgur.com/oDCRwO4.png",
+          },
+          {
+            id: 1,
+            title: "Soporte inmediato",
+            desc:
+              "¿Tienes algún problema? Escribenos, intentaremos ayudarte lo más rápido posible",
+            photo: "https://i.imgur.com/uoKhty6.png",
+          },
+          {
+            id: 2,
+            title: "Librerías",
+            desc:
+              "Nuestro hosting está preparado para que puedas programar tanto con la librería de JavaScript, o la de Python",
+            photo: "https://i.imgur.com/mOvLgAA.png",
+          },
+        ],
+        list: {
+          down: [
+            {
+              title: "Nano",
+              price: "0.99€",
+              url: "https://billing.pyronode.com/cart.php?a=add&pid=4",
+              features: [
+                {
+                  key: "512MB",
+                  value: "RAM",
+                },
+                {
+                  key: "10GB",
+                  value: "SSD",
+                },
+                {
+                  key: "0.99€",
+                  value: "PRECIO",
+                },
+              ],
+            },
+            {
+              title: "Classic",
+              price: "1.99€",
+              url: "https://billing.pyronode.com/cart.php?a=add&pid=5",
+              features: [
+                {
+                  key: "1024MB",
+                  value: "RAM",
+                },
+                {
+                  key: "15GB",
+                  value: "SSD",
+                },
+                {
+                  key: "1.99€",
+                  value: "PRECIO",
+                },
+              ],
+            },
+          ],
+          up: [
+            {
+              title: "Advanced",
+              price: "2.99€",
+              url: "https://billing.pyronode.com/cart.php?a=add&pid=6",
+              features: [
+                {
+                  key: "1.5GB",
+                  value: "RAM",
+                },
+                {
+                  key: "20GB",
+                  value: "SSD",
+                },
+              ],
+            },
+            {
+              title: "Extreme",
+              price: "3.99€",
+              url: "https://billing.pyronode.com/cart.php?a=add&pid=7",
+              features: [
+                {
+                  key: "2GB",
+                  value: "RAM",
+                },
+                {
+                  key: "30GB",
+                  value: "SSD",
+                },
+              ],
+            },
+          ],
+        },
+      },
+    },
+    ts3: {
+      hero: {
+        title: "Servidores de TS3",
+        subtitle: "¡Para hablar con tus amigos!",
+        desc:
+          "En Pyronode te facilitamos un servidor ts3 para poder hablar con tus amigos, elige el plan adecuado, o el número de slots y empieza a comunicarte",
+        photo:
+          "https://i.ibb.co/YhVz6BY/b941bc1dfe379db6cc1f2acc5a612f41-4x-1.png",
+        buttonUrl: "#planes",
+        buttonText: "Ver planes",
+      },
+      plans: {
+        features: [
+          {
+            title: "ANTI-DDOS",
+            desc:
+              "Nuestros servidores de TS3 cuentan con anti-ddos, para que puedas disfrutar de tu servicio sin que ningún envidioso arruine tu momento de diversión, trabajo, o ocio.",
+          },
+          {
+            title: "DOMINIOS",
+            desc:
+              "Al comprar cualquiera de los TS3 podrás conectar tu servidor a un subdominio, como por ejemplo .ts3.vip, para evitar tener que utilizar la IP númerica. ¡También puedes conectar tu propio dominio!",
+          },
+          {
+            title: "ALMACENAMIENTO INFINITO",
+            desc:
+              "Pyronode cuenta con almacenamiento ilimitado en SSD. ¡Podrás hasta compartir juegos con tus amigos a través de tu servidor!",
+          },
+          {
+            title: "PANEL INTUITIVO",
+            desc:
+              "Hemos diseñado un panel para que puedas manejar tu servidor de tu TS3. Incluye todas las características necesarias para controlar tu servidor de TS3 de manera autónoma",
+          },
+        ],
+        list: [
+          {
+            title: "TS3 INICIAL",
+            subtitle: "Hosteado en Europa",
+            photo: "https://i.imgur.com/u2cduOE.png",
+            desc: [
+              {
+                value: "TODAS LAS CARACTERÍSTICAS",
+              },
+              {
+                value: "32 SLOTS",
+              },
+            ],
+            price: " 0.99€",
+            buttonText: "Ver más",
+          },
+          {
+            title: "TS3 CUSTOM",
+            subtitle: "Hosteado en Europa",
+            photo: "https://i.imgur.com/u2cduOE.png",
+            desc: [
+              {
+                value: "TODAS LAS CARACTERÍSTICAS",
+              },
+              {
+                value: "SLOTS ILIMITADOS",
+              },
+            ],
+            price: "DESDE 3.99€",
+            buttonText: "Ver más",
+          },
+        ],
+      },
+    },
   },
 };
 
