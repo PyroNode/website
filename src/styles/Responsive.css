@@ -1,0 +1,211 @@
+#overflow-wrapper {
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 8px; /* Tamaño del scroll en vertical */
+  height: 8px; /* Tamaño del scroll en horizontal */
+  display: none; /* Ocultar scroll */
+}
+
+.TrustPilot__container {
+  z-index: 2;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1100px) {
+  /*--- Tablet --- */
+
+  .Header__links {
+    padding-right: 1vw;
+  }
+
+  /* Home Page */
+
+  /* Discord Page */
+
+  .Discord__hero {
+    width: 75%;
+  }
+
+  .Discord__hero .CarouselItem__photo img {
+    height: 60%;
+    margin-bottom: 15%;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  /* MOBILE */
+
+  /* HOME PAGE */
+
+  .pickUsItem {
+    border-radius: 5px;
+  }
+
+  /* MINECRAFT */
+
+  .PlanDetails__modal {
+    border-radius: 10px;
+  }
+
+  .MachineItem__content {
+    border-radius: 2px;
+  }
+
+  .MachineItem__title {
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+  }
+
+  /* DISCORD */
+
+  .Discord__FeatureItem {
+    border-radius: 5px;
+  }
+
+  .PoweredBy__inside {
+    border-radius: 6px;
+  }
+
+  .Discord__plans-container {
+    border-radius: 4px;
+  }
+
+  .Discord__plans-lowerPlan {
+    margin-top: 1vw;
+  }
+
+  .Discord__plans-lowerPlan:first-child {
+    margin-top: 1vw;
+  }
+
+  .Discord__plans-lowerPlan-left {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+
+  .Discord__plans-upperPlan {
+    border-radius: 4px;
+  }
+
+  .Discord__plans-upperPlan-left {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+
+  .Discord__plans-lowerPlan{
+    border-radius: 4px;
+  }
+
+  /* WEBHOSTING */
+
+  .Web__plans {
+    border-radius: 10px;
+  }
+
+  .WebPlanItem__container-first_child {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .WebPlanItem__container-last_child {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  .WebPlanItem__row-8_3 {
+    border-bottom-right-radius: 10px;
+  }
+
+  /* HEADER */
+
+  .Header__links {
+    width: 75%;
+  }
+
+  .Header__links p {
+    margin: 0 3.5vw;
+    font-size: 1.75vw;
+  }
+
+  /* FOOTER */
+
+  .footer {
+    height: auto;
+    flex-direction: column;
+    position: relative;
+    bottom: 0;
+    margin-top: 3vw;
+    width: calc(100%+8px);
+  }
+
+  .footer__redes {
+    margin-top: 3vw;
+    width: 40%;
+  }
+
+  .footer__redes div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer__redes a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .footer__redes div img {
+    width: 60%;
+    margin: 20% 10%;
+  }
+
+  .footer h1 {
+    font-size: 3.4vw;
+  }
+
+  .footer__links {
+    height: 25vw;
+    width: 80%;
+  }
+
+  .footer__links h1 {
+    margin-bottom: 1.35vw;
+  }
+
+  .footer p {
+    font-size: 1.5vw;
+  }
+
+  .footer__links p {
+    font-size: 1.8vw;
+  }
+
+  .footer__logo {
+    margin-bottom: 3vw;
+    position: relative;
+    bottom: 4.5vw;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1100px) {
+  /* HOME PAGE */
+
+  .Carousel {
+    width: 100%;
+    margin-bottom: 5vw;
+  }
+
+  .Carousel__zIndex {
+    grid-template-columns: minmax(0px, 10%) minmax(0px, 80%) minmax(0px, 10%);
+  }
+
+  .Carousel__button img {
+    width: 30%;
+  }
+
+  .CarouselItem__grid {
+    grid-template-columns: minmax(0px, 40%) minmax(0px, 60%);
+  }
+}

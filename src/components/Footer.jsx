@@ -44,8 +44,8 @@ const Footer = () => {
         </div>
         <div className="footer__logo">
           <img src={logo} alt="" />
-          <h1>Pyronode</h1>
-          <p>COPYRIGHT © 2020-2021</p>
+          <h1>PyroNode</h1>
+          <p>COPYRIGHT © 2021</p>
         </div>
       </div>
     </>

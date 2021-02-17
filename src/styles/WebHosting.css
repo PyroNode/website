@@ -1,0 +1,196 @@
+.Web__Page {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+
+.Web__container {
+  width: 100%;
+  height: 100%;
+}
+
+.Web__hero-container {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 2vh;
+  width: 100%;
+  height: 30vw;
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Open Sans", "Helvetica Neue", sans-serif;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Web__hero {
+  width: 60%;
+  height: 100%;
+}
+
+.Web__hero .CarouselItem__photo img {
+  margin-bottom: 20%;
+}
+
+.Web__plans-container {
+  height: 55vw;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Web__plans {
+  width: 78.5%;
+  height: 78.5%;
+  background: rgba(35, 39, 42, 1);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.WebPlanItem__item {
+  width: 100%;
+  height: 100%;
+}
+
+.WebPlanItem__container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-right: 0.7px solid rgba(255, 255, 255, 0.7);
+}
+
+.WebPlanItem__row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  border-bottom: 0.7px solid rgba(255, 255, 255, 0.7);
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 300;
+  font-size: 1.5vw;
+  text-transform: capitalize;
+}
+
+.WebPlanItem__container-last_child {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.WebPlanItem__row-8_3 {
+  border-bottom-right-radius: 20px;
+}
+
+.WebPlanItem__container-first_child {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.WebPlanItem__row-0_0,
+.WebPlanItem__row-1_0,
+.WebPlanItem__row-2_0,
+.WebPlanItem__row-3_0,
+.WebPlanItem__row-4_0,
+.WebPlanItem__row-5_0,
+.WebPlanItem__row-6_0,
+.WebPlanItem__row-7_0,
+.WebPlanItem__row-8_0 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.WebPlanItem__row-0_0 p,
+.WebPlanItem__row-1_0 p,
+.WebPlanItem__row-2_0 p,
+.WebPlanItem__row-3_0 p,
+.WebPlanItem__row-4_0 p,
+.WebPlanItem__row-5_0 p,
+.WebPlanItem__row-6_0 p,
+.WebPlanItem__row-7_0 p,
+.WebPlanItem__row-8_0 p {
+  font-size: 1.2vw;
+  font-weight: 600;
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Open Sans", "Helvetica Neue", sans-serif;
+  padding-bottom: 1%;
+  text-transform: uppercase;
+  margin-left: 5%;
+}
+
+.WebPlanItem__row-0_0 img,
+.WebPlanItem__row-1_0 img,
+.WebPlanItem__row-2_0 img,
+.WebPlanItem__row-3_0 img,
+.WebPlanItem__row-4_0 img,
+.WebPlanItem__row-5_0 img,
+.WebPlanItem__row-6_0 img,
+.WebPlanItem__row-7_0 img,
+.WebPlanItem__row-8_0 img {
+  width: 10%;
+  margin-left: 9%;
+}
+
+.WebPlanItem__row-0_1 p,
+.WebPlanItem__row-0_2 p,
+.WebPlanItem__row-0_3 p {
+  text-transform: uppercase;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 2vw;
+  border-bottom: 1px solid #e87840;
+  transition: 0.5s;
+}
+
+.WebPlanItem__row-0_1 p:hover,
+.WebPlanItem__row-0_2 p:hover,
+.WebPlanItem__row-0_3 p:hover {
+  transform: scale(1.1);
+}
+.WebPlanItem__row-7_1 p,
+.WebPlanItem__row-7_2 p,
+.WebPlanItem__row-7_3 p {
+  border-bottom: 1px solid #e87840;
+  transition: 0.5s;
+}
+
+.WebPlanItem__row-7_1 p:hover,
+.WebPlanItem__row-7_2 p:hover,
+.WebPlanItem__row-7_3 p:hover {
+  transform: scale(1.1);
+}
+
+.WebPlanItem__row-3_1 p,
+.WebPlanItem__row-1_2 p,
+.WebPlanItem__row-3_2 p,
+.WebPlanItem__row-1_3 p,
+.WebPlanItem__row-2_3 p,
+.WebPlanItem__row-3_3 p,
+.WebPlanItem__row-4_3 p,
+.WebPlanItem__row-5_3 p {
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.933);
+  color: #e87840;
+}
+
+.WebPlanItem__button {
+  width: 70%;
+  height: 60%;
+  background: #e87840;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.WebPlanItem__button a {
+  color: white;
+  text-decoration: none;
+}

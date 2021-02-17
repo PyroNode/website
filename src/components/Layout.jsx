@@ -7,42 +7,66 @@ import Footer from "./Footer";
 import "../styles/Layout.css";
 import "../styles/Animations.css";
 const Layout = (props) => {
+  const [height, setHeight] = React.useState(0);
+  const [width, setWidth] = React.useState(0);
+  const [margin, setMargin] = React.useState(0);
   const children = props.children;
-  const styles = props.optionalStyles;
+
+  setTimeout(() => {
+    setHeight(document.body.scrollHeight);
+    setWidth(document.body.scrollWidth);
+    setMargin(width / 50);
+    console.log(height);
+    console.log(width);
+  }, 0);
+
+  let styles = {
+    height: `${height}px`,
+    width: `${width}px`,
+  };
+
+  let waveStyles = {
+    width: `${height}px`,
+    margin: `auto auto`,
+  };
 
   return (
-    <div className="Layout">
-      <Header dark={props.headerDark} />
-      {children}
+    <>
+      <div className="Layout">
+        <Header width={width} dark={props.headerDark} />
+        {children}
 
-      <Wave
-        className="Layout__wave wave-2"
-        style={styles}
-        fill="#D25A1E"
-        paused={false}
-        options={{
-          height: 50,
-          amplitude: 70,
-          speed: 0.185,
-          points: 5,
-        }}
-      />
+        <Footer />
+      </div>
 
-      <Wave
-        className="Layout__wave"
-        style={styles}
-        fill="#F46923"
-        paused={false}
-        options={{
-          height: 55,
-          amplitude: 75,
-          speed: 0.185,
-          points: 3,
-        }}
-      />
+      <div style={styles} className="Layout__waves-container">
+        <Wave
+          className="Layout__wave wave-2"
+          style={waveStyles}
+          fill="#D25A1E"
+          paused={false}
+          options={{
+            height: 50,
+            amplitude: 60,
+            speed: 0.185,
+            points: 5,
+          }}
+        />
 
-      <Footer />
-    </div>
+        <Wave
+          className="Layout__wave"
+          style={waveStyles}
+          fill="#F46923"
+          paused={false}
+          options={{
+            height: 50,
+            amplitude: 65,
+            speed: 0.185,
+            points: 3,
+          }}
+        />
+      </div>
+    </>
   );
 };
 

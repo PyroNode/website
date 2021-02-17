@@ -7,12 +7,19 @@ body {
   width: 100%;
 }
 
+.Layout__waves-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
 .Layout__wave {
   z-index: 0;
-  width: 250%;
   position: absolute;
-  top: 5%;
-  left: calc(-30% + -10vw);
-  height: 100%;
-  transform: rotate(-105deg);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 45%;
+  transform: rotate(-90deg);
 }

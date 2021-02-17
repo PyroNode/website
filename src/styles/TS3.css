@@ -13,9 +13,9 @@
 .TS3__hero-container {
   display: flex;
   margin: 0 auto;
-  margin-top: 2%;
+  margin-top: 2vh;
   width: 100%;
-  height: 55vh;
+  height: 30vw;
   font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Open Sans", "Helvetica Neue", sans-serif;
   flex-direction: column;
@@ -36,6 +36,7 @@
   align-items: center;
   text-align: center;
   flex-direction: row;
+  margin: 2vh 0;
 }
 
 .TS3__features-container {
@@ -242,7 +243,7 @@
   align-items: center;
   text-align: center;
   flex-direction: column;
-  margin-top: 3%;
+  margin-top: 13.5%;
 }
 .TS3PlanItem__priceSide > p {
   font-size: 2.5vw;
@@ -293,22 +294,34 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.5s;
 }
 
 .TS3PlanItem__button-container h1 {
   font-size: 1.4vw;
+  transition: 0.5s;
+}
+
+.TS3PlanItem__button-container:hover {
+  background: rgb(244, 105, 35);
+  box-shadow: 0px 0px 3px 1px rgb(255 255 255);
+}
+
+.TS3PlanItem__button-container:hover h1 {
+  font-size: 1.6vw;
 }
 
 .TS3PlanItem__desc {
   width: 100%;
   height: 30%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
   color: white;
   font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Open Sans", "Helvetica Neue", sans-serif;
+  padding-top: 5%;
 }
 
 .TS3PlanItem_descItem {

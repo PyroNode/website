@@ -149,6 +149,7 @@
   justify-content: center;
   align-items: center;
   border-bottom: 2px solid rgba(35, 39, 42, 1);
+  margin-top: 2vh;
 }
 
 .MachineItem__card-spec-half {
@@ -161,6 +162,8 @@
     "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 1.5vw;
 }
+
+
 
 .MachineItem__card-flex-end {
   justify-content: flex-end;
@@ -188,6 +191,7 @@
   margin-bottom: 2%;
 }
 
-.MachineItem__card-button > div p {
+.MachineItem__card-button > div a {
   color: black;
+  font-size: 2vw;
 }

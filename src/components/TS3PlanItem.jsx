@@ -1,8 +1,6 @@
 import React from "react";
 
 const TS3PlanItem = ({ content }) => {
-  const priceArray = content.price.split(" ");
-
   return (
     <>
       <div className="TS3PlanItem__item">
@@ -14,8 +12,7 @@ const TS3PlanItem = ({ content }) => {
               <p>{content.subtitle}</p>
             </div>
             <div className="TS3PlanItem__priceSide">
-              <span>{priceArray[0]}</span>
-              <p>{priceArray[1]}</p>
+              <p>{content.price}</p>
               <div className="TS3PlanItem__priceButton">
                 <p>por mes</p>
               </div>
@@ -26,7 +23,10 @@ const TS3PlanItem = ({ content }) => {
               return (
                 <>
                   <div className="TS3PlanItem_descItem">
-                    <p>{descItem.value}</p>
+                    <p>
+                      <span>· </span>
+                      {descItem.value}
+                    </p>
                   </div>
                 </>
               );

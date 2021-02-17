@@ -8,9 +8,9 @@
 .Discord__hero-container {
   display: flex;
   margin: 0 auto;
-  margin-top: 2%;
+  margin-top: 2vh;
   width: 100%;
-  height: 55vh;
+  height: 30vw;
   font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Open Sans", "Helvetica Neue", sans-serif;
   flex-direction: column;

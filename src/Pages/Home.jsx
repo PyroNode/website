@@ -8,14 +8,10 @@ import TrustPilotCarousel from "../components/TrustPilotCarousel";
 import Layout from "../components/Layout";
 
 const Home = ({ carousel, pickus, trustpilot }) => {
-  const styles = {
-    width: "250%",
-    left: "calc(-30% + -10vw)",
-    top: "5%",
-  };
+
   return (
     <>
-      <Layout optionalStyles={styles} headerDark={false}>
+      <Layout  headerDark={false}>
         <div className="Home">
           <Carousel items={carousel} />
           <PickingUs items={pickus} />

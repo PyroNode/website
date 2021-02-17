@@ -16,7 +16,7 @@ const TrustPilotCarousel = ({ items, active_item, setActiveTPItem }) => {
   let intervalID = 0;
 
   useEffect(() => {
-    automaticUpIndex();
+
     if (firstElement) {
       setActiveTPItem(index);
       setClass("TrustPilot__review active transition");

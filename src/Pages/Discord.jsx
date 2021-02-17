@@ -6,16 +6,17 @@ import { connect } from "react-redux";
 import CarouselItem from "../components/CarouselItem";
 import DiscordFeatures from "../components/DiscordFeatures";
 import DiscordPlans from "../components/DiscordPlans";
+import PoweredBy from "../components/PoweredBy";
 
 const Discord = ({ hero, content, plans }) => {
   const styles = {
-    width: "200%",
+    width: "calc(220vh)",
     left: "calc(-5% + -10vw)",
   };
 
   return (
     <>
-      <Layout optionalStyles={styles} headerDark={false}>
+      <Layout headerDark={false}>
         <div className="Discord__Page">
           <div className="Discord__hero-container">
             <div className="Discord__hero">
@@ -23,6 +24,7 @@ const Discord = ({ hero, content, plans }) => {
             </div>
           </div>
           <DiscordFeatures content={content} />
+          <PoweredBy />
           <DiscordPlans content={plans} />
         </div>
       </Layout>

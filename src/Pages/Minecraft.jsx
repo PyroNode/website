@@ -7,14 +7,10 @@ import CarouselItem from "../components/CarouselItem";
 import PlansController from "../components/PlansController";
 
 const Minecraft = ({ hero }) => {
-      const styles = {
-        width: "250%",
-        left: "calc(-30% + -10vw)",
-        top: "25%"
-      };
+
   return (
     <>
-      <Layout optionalStyles={styles} headerDark={false}>
+      <Layout  headerDark={false}>
         <div className="Minecraft__Page">
           <div className="Minecraft__hero-container">
             <div className="Minecraft__hero">

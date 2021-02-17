@@ -740,13 +740,13 @@ const initialState = {
             photo: "https://i.imgur.com/u2cduOE.png",
             desc: [
               {
-                value: "TODAS LAS CARACTERÍSTICAS",
-              },
-              {
                 value: "32 SLOTS",
               },
+              {
+                value: "1 SUBDOMINIO GRATUITO",
+              },
             ],
-            price: " 0.99€",
+            price: "0.99€",
             buttonText: "Ver más",
           },
           {
@@ -755,14 +755,164 @@ const initialState = {
             photo: "https://i.imgur.com/u2cduOE.png",
             desc: [
               {
-                value: "TODAS LAS CARACTERÍSTICAS",
-              },
-              {
                 value: "SLOTS ILIMITADOS",
               },
+              {
+                value: "1 SUBDOMINIO GRATUITO",
+              },
             ],
-            price: "DESDE 3.99€",
+            price: "3.99€",
             buttonText: "Ver más",
+          },
+        ],
+      },
+    },
+    webhosting: {
+      hero: {
+        title: "Hosting de sitios web",
+        subtitle: "¡Para mostrar tus proyectos!",
+        desc:
+          "Da vida a tu página personal o a tus proyectos mostrando una página web y teniendo un correo profesional. Con nuestro alojamiento web podrás hacer esto sin complicaciones",
+        photo: "https://i.imgur.com/AijqMdc.png",
+        buttonUrl: "#planes",
+        buttonText: "Ver planes",
+      },
+      plans: {
+        list: [
+          {
+            rows: [
+              {
+                photo: "https://i.imgur.com/NiuAXdD.png",
+                value: "Plan",
+              },
+              {
+                photo: "https://i.imgur.com/8iFkQ8X.png",
+                value: "Almacenamiento SSD",
+              },
+              {
+                photo: "https://i.imgur.com/De6y63y.png",
+                value: "Sitios web",
+              },
+              {
+                photo: "https://i.imgur.com/lylROAO.png",
+                value: "Subdominios",
+              },
+              {
+                photo: "https://i.imgur.com/nDMklmE.png",
+                value: "Bandejas de correo",
+              },
+              {
+                photo: "https://i.imgur.com/chmUXgr.png",
+                value: "Bases de datos MySQL",
+              },
+              {
+                photo: "https://i.imgur.com/S4BAJ8e.png",
+                value: "Memoria RAM",
+              },
+              {
+                photo: "https://i.imgur.com/LkHBcaG.png",
+                value: "Coste",
+              },
+              {
+                value: "",
+              },
+            ],
+          },
+          {
+            rows: [
+              {
+                value: "Basic",
+              },
+              {
+                value: "15GB",
+              },
+              {
+                value: "1",
+              },
+              {
+                value: "ilimitados",
+              },
+              {
+                value: "10",
+              },
+              {
+                value: "1",
+              },
+              {
+                value: "1GB",
+              },
+              {
+                value: "2.49€",
+              },
+              {
+                value: "ADQUIRIR",
+                url: "https://billing.pyronode.com/cart.php?a=add&pid=1",
+              },
+            ],
+          },
+          {
+            rows: [
+              {
+                value: "Ultra",
+              },
+              {
+                value: "ilimitado",
+              },
+              {
+                value: "10",
+              },
+              {
+                value: "ilimitados",
+              },
+              {
+                value: "100",
+              },
+              {
+                value: "10",
+              },
+              {
+                value: "1.5GB",
+              },
+              {
+                value: "3.99€",
+              },
+              {
+                value: "ADQUIRIR",
+                url: "https://billing.pyronode.com/cart.php?a=add&pid=2",
+              },
+            ],
+          },
+          {
+            rows: [
+              {
+                value: "Master",
+              },
+              {
+                value: "ilimitado",
+              },
+              {
+                value: "ilimitados",
+              },
+              {
+                value: "ilimitados",
+              },
+              {
+                value: "ilimitadas",
+              },
+              {
+                value: "ilimitadas",
+              },
+              {
+                value: "2GB",
+              },
+              {
+                value: "6.99€",
+              },
+              {
+                value: "ADQUIRIR",
+                url: "https://billing.pyronode.com/cart.php?a=add&pid=3",
+              },
+            ],
           },
         ],
       },

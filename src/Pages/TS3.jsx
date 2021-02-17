@@ -4,18 +4,15 @@ import CarouselItem from "../components/CarouselItem";
 import Layout from "../components/Layout";
 import TS3FeatureItem from "../components/TS3FeatureItem";
 import TS3PlanItem from "../components/TS3PlanItem";
+import PoweredBy from "../components/PoweredBy";
 import "../styles/TS3.css";
 import { connect } from "react-redux";
 
 const TS3 = ({ hero, features, plans }) => {
-  const styles = {
-    width: "200%",
-    left: "calc(-5% + -10vw)",
-  };
 
   return (
     <>
-      <Layout optionalStyles={styles}>
+      <Layout>
         <div className="TS3__Page">
           <div className="TS3__container">
             <div className="TS3__hero-container">
@@ -31,7 +28,7 @@ const TS3 = ({ hero, features, plans }) => {
                   {features.map((feature) => {
                     return (
                       <TS3FeatureItem
-                        key={features.valueOf(feature)}
+                        key={features.indexOf(feature)}
                         content={feature}
                       />
                     );
@@ -39,6 +36,7 @@ const TS3 = ({ hero, features, plans }) => {
                 </div>
               </div>
             </div>
+            <PoweredBy />
             <div className="TS3__plans">
               {plans.map((plan) => {
                 return <TS3PlanItem key={plans.indexOf(plan)} content={plan} />;
