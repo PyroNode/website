@@ -9,7 +9,6 @@ import "../styles/TS3.css";
 import { connect } from "react-redux";
 
 const TS3 = ({ hero, features, plans }) => {
-
   return (
     <>
       <Layout>

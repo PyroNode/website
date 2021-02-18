@@ -31,8 +31,8 @@ const Header = ({ width, dark }) => {
           <div className="Header__container">
             <Link to="/">
               <div className="Header__img-container">
-                <img src={logo} alt="Pyronode" />
-                <h1>Pyronode</h1>
+                <img src={logo} alt="PyroNode" />
+                <h1>PyroNode</h1>
               </div>
             </Link>
           </div>
@@ -67,7 +67,7 @@ const Header = ({ width, dark }) => {
           <Link to="/">
             <div className="Header__img-container">
               <img src={logo} alt="Pyronode" />
-              <h1>Pyronode</h1>
+              <h1>PyroNode</h1>
             </div>
           </Link>
         </div>

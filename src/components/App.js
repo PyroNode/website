@@ -29,7 +29,7 @@ const App = () => {
         <Route exact path="/minecraft" component={Minecraft} />
         <Route exact path="/discord" component={Discord} />
         <Route exact path="/voice" component={TS3} />
-        <Route exact path="/webhosting" component={WebHosting} />
+        <Route exact path="/web" component={WebHosting} />
         <Route component={NotFound} />
       </Switch>
     </BrowserRouter>

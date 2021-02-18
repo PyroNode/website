@@ -37,7 +37,7 @@ const WebHosting = ({ hero, plans }) => {
               })}
             </div>
           </div>
-          <PoweredBy />
+          <PoweredBy cPanel />
         </div>
       </Layout>
     </>

@@ -308,7 +308,7 @@ const initialState = {
                     best_option: false,
                     recommended: false,
                     recommended_for_mods: false,
-                    url: "https://billing.pyronode.com/cart.php?a=add&pid=19",
+                    url: "https://billing.pyronode.com/cart.php?a=add&pid=22",
                   },
                   {
                     title: "Steve",
@@ -318,7 +318,7 @@ const initialState = {
                     best_option: false,
                     recommended: false,
                     recommended_for_mods: false,
-                    url: "https://billing.pyronode.com/cart.php?a=add&pid=20",
+                    url: "https://billing.pyronode.com/cart.php?a=add&pid=23",
                   },
                 ],
                 cards: {
@@ -329,7 +329,7 @@ const initialState = {
                       best_option: false,
                       recommended: false,
                       recommended_for_mods: false,
-                      url: "https://billing.pyronode.com/cart.php?a=add&pid=21",
+                      url: "https://billing.pyronode.com/cart.php?a=add&pid=24",
                       specs: [
                         {
                           key: "Ram",
@@ -347,7 +347,7 @@ const initialState = {
                       best_option: false,
                       recommended: false,
                       recommended_for_mods: false,
-                      url: "https://billing.pyronode.com/cart.php?a=add&pid=22",
+                      url: "https://billing.pyronode.com/cart.php?a=add&pid=25",
                       specs: [
                         {
                           key: "Ram",
@@ -368,7 +368,7 @@ const initialState = {
                     best_option: false,
                     recommended: false,
                     recommended_for_mods: false,
-                    url: "https://billing.pyronode.com/cart.php?a=add&pid=23",
+                    url: "https://billing.pyronode.com/cart.php?a=add&pid=26",
                   },
                 },
               },

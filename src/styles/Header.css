@@ -1,11 +1,12 @@
 .Header__header {
   z-index: 1;
   position: relative;
-  height: 10vw;
+  height: 6vw;
   display: flex;
   background-color: transparent;
   justify-content: center;
   align-items: center;
+  padding-top: 1.5%;
 }
 
 .Header__header a {
@@ -40,7 +41,8 @@
 }
 
 .Header__img-container img {
-  height: 50%;
+  height: 80%;
+  margin-right: 1.5%;
 }
 
 .Header__container h1 {
@@ -81,6 +83,6 @@
   opacity: 1;
 }
 
-.Header__links .Header__fade{
+.Header__links .Header__fade {
   opacity: 0;
 }

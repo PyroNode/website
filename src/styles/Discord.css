@@ -45,7 +45,7 @@
 }
 
 .Discord__FeatureItem {
-  height: 80%;
+  height: 65%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -237,13 +237,14 @@
 .Discord__plans-upperPlan-button {
   height: 17.5%;
   width: 80%;
-  border-radius: 12px;
-  background-color: rgba(35, 39, 42, 1);
+  border-radius: 8px;
+  background-color: rgb(244, 105, 35);
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 18%;
+  border: 1px solid white;
 }
 
 .Discord__plans-upperPlan-button > p {
@@ -266,7 +267,6 @@
   justify-content: center;
   align-items: center;
 }
-
 
 .Discord__plans-lowerPlan-button {
   height: 30%;

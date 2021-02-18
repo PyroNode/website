@@ -66,10 +66,12 @@ const MachineItem = ({ content, isCard }) => {
           </div>
           <div className="MachineItem__ram">
             <p>{content.ram}</p>
+            <span>RAM</span>
           </div>
 
           <div className="MachineItem__price">
             <p>{content.price}</p>
+            <span>PRECIO</span>
           </div>
 
           <div className="MachineItem__button">

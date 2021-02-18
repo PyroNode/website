@@ -1,8 +1,9 @@
 import React from "react";
 import { Fade } from "react-awesome-reveal";
 import "../styles/PoweredBy.css";
+import cPanelLogo from "../static/cpanel_lantern.svg";
 
-const PoweredBy = () => {
+const PoweredBy = ({ cPanel }) => {
   const [index, setIndex] = React.useState(1);
 
   const baseUrl = "https://cdn.pterodactyl.io/site-assets/carousel/screenshot-";
@@ -33,6 +34,34 @@ const PoweredBy = () => {
       handleUpIndex();
     }, 3500);
   };
+
+  if (cPanel) {
+    return (
+      <>
+        <div className="PoweredBy__container">
+          <div className="PoweredBy__item">
+            <div className="PoweredBy__inside">
+              <Fade
+                cascade
+                triggerOnce
+                duration={1200}
+                damping={0.25}
+                direction="right"
+              >
+                <h1>Impulsado por</h1>
+                <h1 className="PoweredBy-orange">cPanel</h1>
+                <p>Impulsado por el panel de control cPanel.</p>
+                <p>El panel más poderoso del mercado.</p>
+              </Fade>
+            </div>
+          </div>
+          <div className="PoweredBy__item">
+            <img src={cPanelLogo} alt="cpanel" />
+          </div>
+        </div>
+      </>
+    );
+  }
 
   return (
     <>
