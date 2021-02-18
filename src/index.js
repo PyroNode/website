@@ -45,7 +45,7 @@ const initialState = {
         "Da vida a tu página personal o a tus proyectos mostrando una página web y teniendo un correo profesional. Con nuestro alojamiento web podrás hacer esto sin complicaciones.",
       photo:
         "https://static.wixstatic.com/media/c545ec_eb3ed284b8b546a2a8002bd32cff390b~mv2.png/v1/fill/w_374,h_374,al_c,q_85,usm_0.66_1.00_0.01/dedicado.webp",
-      buttonUrl: "/webhosting",
+      buttonUrl: "/web",
     },
   ],
   pickus: [
