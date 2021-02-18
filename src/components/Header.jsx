@@ -41,9 +41,8 @@ const Header = ({ width, dark }) => {
             <Link to="/">
               <p className={pClass}>Inicio</p>
             </Link>
-            <p className={pClass}>Contacto</p>
-            <p className={pClass}>Precios</p>
-            <p className={pClass}>Otros</p>
+            <p className={pClass}>Productos</p>
+            <p className={pClass}>Páginas</p>
 
             <img
               onClick={() => {
@@ -77,9 +76,8 @@ const Header = ({ width, dark }) => {
           <Link to="/">
             <p>Inicio</p>
           </Link>
-          <p>Contacto</p>
-          <p>Precios</p>
-          <p>Otros</p>
+          <p>Productos</p>
+          <p>Páginas</p>
         </div>
       </header>
     </>

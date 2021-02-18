@@ -30,12 +30,6 @@ const Footer = () => {
             <p>Hosting Web</p>
           </div>
           <div className="footer__column">
-            <h1>NOSOTROS</h1>
-            <p>¿Quiénes somos?</p>
-            <p>Soporte técnico</p>
-            <p>Preguntas frecuentes</p>
-          </div>
-          <div className="footer__column">
             <h1>ENLACES</h1>
             <p>Área de Clientes</p>
             <p>Panel VPS</p>

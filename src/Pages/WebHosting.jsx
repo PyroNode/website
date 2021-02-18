@@ -20,11 +20,11 @@ const WebHosting = ({ hero, plans }) => {
               </div>
             </div>
           </div>
-          <PoweredBy />
+
           <div className="Web__plans-container">
             <div className="Web__plans">
               {plans.map((item) => {
-                  console.log(plans.length)
+                console.log(plans.length);
                 return (
                   <WebPlanItem
                     key={plans.indexOf(item)}
@@ -37,6 +37,7 @@ const WebHosting = ({ hero, plans }) => {
               })}
             </div>
           </div>
+          <PoweredBy />
         </div>
       </Layout>
     </>

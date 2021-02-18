@@ -24,8 +24,8 @@ const Discord = ({ hero, content, plans }) => {
             </div>
           </div>
           <DiscordFeatures content={content} />
-          <PoweredBy />
           <DiscordPlans content={plans} />
+          <PoweredBy />
         </div>
       </Layout>
     </>

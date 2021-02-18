@@ -593,7 +593,7 @@ const initialState = {
         title: "Bots de Discord",
         subtitle: "Muy sencillo",
         desc:
-          "No tienes que ser un ingeniero para poder alojar tu bot de discord. En Pyronode te facilitamos todo para que solo tengas que programar, y divertirte",
+          "No tienes que ser un ingeniero para poder alojar tu bot de discord. En PyroNode te facilitamos todo para que solo tengas que programar, y divertirte",
         photo:
           "https://i.ibb.co/YhVz6BY/b941bc1dfe379db6cc1f2acc5a612f41-4x-1.png",
         buttonUrl: "#planes",
@@ -704,7 +704,7 @@ const initialState = {
         title: "Servidores de TS3",
         subtitle: "¡Para hablar con tus amigos!",
         desc:
-          "En Pyronode te facilitamos un servidor ts3 para poder hablar con tus amigos, elige el plan adecuado, o el número de slots y empieza a comunicarte",
+          "En PyroNode te facilitamos un servidor ts3 para poder hablar con tus amigos, elige el plan adecuado, o el número de slots y empieza a comunicarte",
         photo:
           "https://i.ibb.co/YhVz6BY/b941bc1dfe379db6cc1f2acc5a612f41-4x-1.png",
         buttonUrl: "#planes",
@@ -725,7 +725,7 @@ const initialState = {
           {
             title: "ALMACENAMIENTO INFINITO",
             desc:
-              "Pyronode cuenta con almacenamiento ilimitado en SSD. ¡Podrás hasta compartir juegos con tus amigos a través de tu servidor!",
+              "PyroNode cuenta con almacenamiento ilimitado en SSD. ¡Podrás hasta compartir juegos con tus amigos a través de tu servidor!",
           },
           {
             title: "PANEL INTUITIVO",

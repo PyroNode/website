@@ -141,8 +141,8 @@
 }
 
 .Discord__plans-upperPlan {
-  width: 40%;
-  height: 80%;
+  width: 36%;
+  height: 75%;
   background-color: white;
   margin-right: 10%;
   border-radius: 8px;
@@ -251,14 +251,14 @@
 }
 
 .Discord__plans-upperPlan-left > h1 {
-  font-size: 2vw;
+  font-size: 1.8vw;
   margin-top: 2%;
   color: white;
 }
 
 .Discord__plans-lowerPlan {
-  width: 90%;
-  height: 40%;
+  width: 80%;
+  height: 35%;
   background-color: white;
   margin-top: 2%;
   border-radius: 8px;
@@ -267,9 +267,6 @@
   align-items: center;
 }
 
-.Discord__plans-lowerPlan:first-child {
-  margin-top: 0;
-}
 
 .Discord__plans-lowerPlan-button {
   height: 30%;
