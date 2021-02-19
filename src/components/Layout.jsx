@@ -15,7 +15,6 @@ const Layout = (props) => {
   setTimeout(() => {
     setHeight(document.body.scrollHeight);
     setWidth(document.body.scrollWidth);
-    setMargin(width / 50);
     console.log(height);
     console.log(width);
   }, 0);
@@ -39,33 +38,35 @@ const Layout = (props) => {
         <Footer />
       </div>
 
-      <div style={styles} className="Layout__waves-container">
-        <Wave
-          className="Layout__wave wave-2"
-          style={waveStyles}
-          fill="#D25A1E"
-          paused={false}
-          options={{
-            height: 50,
-            amplitude: 60,
-            speed: 0.185,
-            points: 5,
-          }}
-        />
+      {width >= 900 && (
+        <div style={styles} className="Layout__waves-container">
+          <Wave
+            className="Layout__wave wave-2"
+            style={waveStyles}
+            fill="#D25A1E"
+            paused={false}
+            options={{
+              height: 50,
+              amplitude: 60,
+              speed: 0.185,
+              points: 5,
+            }}
+          />
 
-        <Wave
-          className="Layout__wave"
-          style={waveStyles}
-          fill="#F46923"
-          paused={false}
-          options={{
-            height: 50,
-            amplitude: 65,
-            speed: 0.185,
-            points: 3,
-          }}
-        />
-      </div>
+          <Wave
+            className="Layout__wave"
+            style={waveStyles}
+            fill="#F46923"
+            paused={false}
+            options={{
+              height: 50,
+              amplitude: 65,
+              speed: 0.185,
+              points: 3,
+            }}
+          />
+        </div>
+      )}
     </>
   );
 };

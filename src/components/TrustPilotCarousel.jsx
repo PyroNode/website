@@ -9,14 +9,20 @@ import right from "../static/right-arrow.png";
 import "../styles/TrustPilotCarousel.css";
 import CarouselDotsControler from "./CarouselDotsControler";
 
-const TrustPilotCarousel = ({ items, active_item, setActiveTPItem }) => {
+const TrustPilotCarousel = ({
+  items,
+  active_item,
+  setActiveTPItem,
+  height,
+  width,
+}) => {
   const [index, setIndex] = useState(0);
   const [customClass, setClass] = useState("TrustPilot__review active ");
   const [firstElement, setFirstElement] = useState(true);
   let intervalID = 0;
 
   useEffect(() => {
-
+   
     if (firstElement) {
       setActiveTPItem(index);
       setClass("TrustPilot__review active transition");
@@ -62,6 +68,45 @@ const TrustPilotCarousel = ({ items, active_item, setActiveTPItem }) => {
       handleUpIndex();
     }, 3500);
   };
+
+  if (width <= 800) {
+    return (
+      <>
+        <div className="TrustPilot__Carousel">
+          <div className="TrustPilot__zIndex">
+            <div className={customClass}>
+              {active_item !== undefined ? (
+                <TrustPilotCarouselItem
+                  key={active_item.id}
+                  content={active_item}
+                  isMobile
+                />
+              ) : (
+                "Loading"
+              )}
+            </div>
+          </div>
+
+          <div className="TrustPilot__buttons-container">
+            <div
+              className="TrustPilot__button button1"
+              onClick={handleBackIndex}
+            >
+              <img src={right} alt="" />
+            </div>
+
+            <div className="TrustPilot__button button2" onClick={handleUpIndex}>
+              <img src={left} alt="" />
+            </div>
+          </div>
+
+          <div className="TrustPilot__container">
+            <TrustPilotContainer />
+          </div>
+        </div>
+      </>
+    );
+  }
 
   return (
     <>

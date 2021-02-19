@@ -10,7 +10,7 @@
   width: 75%;
 }
 
-@media only screen and (min-width: 600px) and (max-width: 1100px) {
+@media only screen and (min-width: 802px) and (max-width: 1100px) {
   /*--- Tablet --- */
 
   .Header__links {
@@ -20,6 +20,7 @@
   /* Home Page */
 
   .TrustPilot__container {
+    position: absolute;
     bottom: 30% !important;
   }
 
@@ -35,8 +36,270 @@
   }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 600px) {
+@media only screen and (min-width: 320px) and (max-width: 801px) {
   /* MOBILE */
+
+  .Home > div {
+    display: none;
+  }
+
+  /* CAROUSEL */
+
+  .Home .Carousel {
+    display: flex;
+    width: 100%;
+    height: 95vw;
+  }
+  .Carousel__zIndex {
+    grid-template-columns: minmax(0px, 100%);
+    height: 90%;
+  }
+
+  .Carousel__buttons-container {
+    height: 10%;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .Carousel__buttons-container > div {
+    width: 50%;
+    height: 80%;
+  }
+
+  .Carousel__buttons-container > div > img {
+    width: 8.5%;
+  }
+
+  .CarouselItem__grid {
+    grid-template-columns: minmax(0px, 100%);
+    grid-template-rows: minmax(0px, 100%);
+  }
+
+  .CarouselItem__info {
+    padding: 0 10%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10%;
+  }
+
+  .CarouselItem__title {
+    height: 35%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 3.5%;
+  }
+
+  .CarouselItem__info .CarouselItem__title > div > h1 {
+    font-size: 5vw;
+  }
+
+  .CarouselItem__info h2 {
+    height: 7.5%;
+    width: 70%;
+    font-size: 3.2vw;
+    margin-top: 0;
+  }
+
+  .CarouselItem__info p {
+    margin-top: 7.5%;
+    margin-bottom: 0;
+    font-size: 3vw;
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      "Open Sans", "Helvetica Neue", sans-serif;
+  }
+
+  .CarouselItem__title img {
+    margin: 0;
+    height: 80%;
+  }
+
+  .CarouselItem__td {
+    width: 80%;
+    height: 10%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .CarouselItem__button {
+    height: 80%;
+    width: 50%;
+    display: block;
+    border-radius: 12px;
+    font-size: 3.5vw;
+  }
+
+  /* PICKUS */
+
+  .Home .pickUs__all {
+    display: flex;
+    height: 100vw;
+  }
+
+  .pickUs__flex .pickUs__title h1 {
+    font-size: 4vw;
+  }
+
+  .pickUsItem {
+    width: 87.5%;
+  }
+
+  .pickUsItem__upperZone {
+    height: 40%;
+  }
+
+  .pickUsItem__lowerZone {
+    height: 60%;
+  }
+
+  .pickUsItem__upperZone h1 {
+    font-size: 5vw;
+  }
+
+  .pickUsItem__upperZone img {
+    height: 10vw;
+    padding: 1%;
+  }
+
+  .pickUsItem__downZone p {
+    font-size: 2.3vw;
+    width: 85%;
+    padding-top: 2%;
+  }
+
+  /* REVIEWS */
+
+  .Home .TrustPilot__Carousel {
+    display: flex;
+    height: 70vw;
+  }
+
+  .TrustPilot__zIndex {
+    height: 85%;
+  }
+
+  .TrustPilot__review {
+    width: 95%;
+  }
+
+  .TPItem__all {
+    width: 95%;
+    height: 90%;
+  }
+
+  .TPItem__info {
+    height: 75% !important;
+    margin-top: 5%;
+    width: 100%;
+  }
+
+  .TPItem__info > blockquote {
+    height: 82.5%;
+    width: 90%;
+  }
+
+  .TPItem__info > blockquote h1 {
+    font-size: 4.8vw;
+    padding-left: 2%;
+    margin-bottom: 0;
+  }
+
+  .TPItem__info > blockquote h2 {
+    font-size: 3.5vw;
+    padding-left: 3.5%;
+    margin-bottom: 1.5%;
+    color: rgb(94, 94, 94);
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      "Open Sans", "Helvetica Neue", sans-serif;
+    text-transform: uppercase;
+  }
+
+  .TPItem__info > blockquote > blockquote {
+    height: 70%;
+    padding-left: 3.5%;
+  }
+
+  .TPItem__info > blockquote > blockquote::before {
+    font-size: 7vw;
+  }
+
+  .TPItem__info > blockquote > blockquote::after {
+    font-size: 7vw;
+  }
+
+  .TPItem__info > blockquote > blockquote p {
+    font-size: 3.25vw;
+  }
+
+  .TPItem__user {
+    height: 20% !important;
+    margin: 2.5% 0;
+  }
+
+  .TPItem__user p {
+    font-size: 3.5vw;
+  }
+
+  .TrustPilot__buttons-container {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .TrustPilot__buttons-container > div {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .TrustPilot__buttons-container > div > img {
+    left: 0;
+    top: 0;
+    position: static;
+    height: 100%;
+  }
+
+  .TrustPilot__container {
+    height: 5%;
+    position: static !important;
+  }
+
+  /* HEADER */
+
+  .Header__header {
+    height: 17vw;
+    padding: 0;
+  }
+
+  .Header__img-container img {
+    height: 45%;
+  }
+
+  .Header__container h1 {
+    font-size: 3.5vw;
+  }
+
+  .Header__links {
+    width: 75%;
+  }
+
+  .Header__links p {
+    margin: 0 2vw;
+    font-size: 2.5vw;
+  }
 
   /* HOME PAGE */
 
@@ -119,21 +382,10 @@
     border-bottom-right-radius: 10px;
   }
 
-  /* HEADER */
-
-  .Header__links {
-    width: 75%;
-  }
-
-  .Header__links p {
-    margin: 0 3.5vw;
-    font-size: 1.75vw;
-  }
-
   /* FOOTER */
 
   .footer {
-    height: auto;
+    height: 60vw;
     flex-direction: column;
     position: relative;
     bottom: 0;
@@ -198,7 +450,7 @@
     display: none; /* Ocultar scroll */
   }
   /* HOME PAGE */
-
+  /* s
   .Carousel {
     width: 100%;
     margin-bottom: 5vw;
@@ -214,7 +466,7 @@
 
   .CarouselItem__grid {
     grid-template-columns: minmax(0px, 40%) minmax(0px, 60%);
-  }
+  } */
 
   .TrustPilot__Carousel {
     margin-bottom: 5vh;
@@ -232,8 +484,14 @@
   .TrustPilot__Carousel .dots__container {
     bottom: -0vh;
   }
+}
 
-  .TrustPilot__container {
-    bottom: 2vh;
+@media only screen and (min-width: 0px) and (max-width: 900px) {
+  .Layout {
+    background-image: url("https://i.imgur.com/5IbOVaI.png");
+    background-position: right;
+    background-size: cover;
+    background-clip: content-box;
+    background-repeat: no-repeat;
   }
 }

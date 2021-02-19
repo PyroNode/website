@@ -10,7 +10,7 @@ const Header = ({ width, dark }) => {
   const [imgClass, setImgClass] = React.useState("");
   const [pClass, setPClass] = React.useState("");
 
-  const widthDark = width <= 600 ? true : false;
+  const widthDark = width <= 800 ? true : false;
 
   const headerClass = classNames("Header__header", {
     dark,

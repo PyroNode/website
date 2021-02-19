@@ -8,7 +8,13 @@ import right from "../static/right-arrow.png";
 import "../styles/Carousel.css";
 import CarouselDotsControler from "./CarouselDotsControler";
 
-const Carousel = ({ items, setActiveCarouselItem, active_item }) => {
+const Carousel = ({
+  items,
+  setActiveCarouselItem,
+  active_item,
+  height,
+  width,
+}) => {
   const [index, setIndex] = useState(0);
   const [customClass, setClass] = useState("Carousel__item active ");
   const [firstElement, setFirstElement] = useState(true);
@@ -49,6 +55,32 @@ const Carousel = ({ items, setActiveCarouselItem, active_item }) => {
 
     setActiveCarouselItem(index);
   };
+
+  if (width <= 800) {
+    return (
+      <>
+        <div className="Carousel">
+          <div className="Carousel__zIndex">
+            <div className={customClass}>
+              {active_item !== undefined && (
+                <CarouselItem isMobile isInPage={false} content={active_item} />
+              )}
+            </div>
+          </div>
+
+          <div className="Carousel__buttons-container">
+            <div className="Carousel__button" onClick={handleBackIndex}>
+              <img src={right} alt="" />
+            </div>
+
+            <div className="Carousel__button" onClick={handleUpIndex}>
+              <img src={left} alt="" />
+            </div>
+          </div>
+        </div>
+      </>
+    );
+  }
 
   return (
     <>

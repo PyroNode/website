@@ -8,14 +8,27 @@ import TrustPilotCarousel from "../components/TrustPilotCarousel";
 import Layout from "../components/Layout";
 
 const Home = ({ carousel, pickus, trustpilot }) => {
+  const [height, setHeight] = React.useState(0);
+  const [width, setWidth] = React.useState(0);
+
+  setTimeout(() => {
+    setHeight(document.body.scrollHeight);
+    setWidth(document.body.scrollWidth);
+    console.log(height);
+    console.log(width);
+  }, 0);
 
   return (
     <>
-      <Layout  headerDark={false}>
+      <Layout headerDark={false}>
         <div className="Home">
-          <Carousel items={carousel} />
-          <PickingUs items={pickus} />
-          <TrustPilotCarousel items={trustpilot} />
+          <Carousel height={height} width={width} items={carousel} />
+          <PickingUs height={height} width={width} items={pickus} />
+          <TrustPilotCarousel
+            height={height}
+            width={width}
+            items={trustpilot}
+          />
         </div>
       </Layout>
     </>
