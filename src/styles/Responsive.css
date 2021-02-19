@@ -211,4 +211,25 @@
   .CarouselItem__grid {
     grid-template-columns: minmax(0px, 40%) minmax(0px, 60%);
   }
+
+  .TrustPilot__Carousel {
+    margin-bottom: 5vh;
+    height: 40vw;
+  }
+
+  .TPItem__info {
+    height: auto;
+  }
+
+  .TPItem__user {
+    height: auto;
+  }
+
+  .TrustPilot__Carousel .dots__container {
+    bottom: -0vh;
+  }
+
+  .TrustPilot__container {
+    bottom: 2vh;
+  }
 }

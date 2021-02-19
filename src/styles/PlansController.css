@@ -33,7 +33,7 @@
 
 .PlanDetails__modal {
   width: 70%;
-  height: 120vw;
+  height: 70vw;
   background: rgba(35, 39, 42, 1);
   border-radius: 20px;
   margin-bottom: 5%;
@@ -44,8 +44,8 @@
 
 .PlanDetails__columns {
   width: 80%;
-  height: 10%;
-  margin-top: 3.5%;
+  height: 15%;
+  margin-top: 7%;
   padding: 0 2.5%;
 }
 
@@ -63,7 +63,7 @@
 }
 
 .PlanDetails__columns {
-  margin-bottom: 7.5%;
+  margin-bottom: 3.5%;
 }
 
 .PlanDetails__item {
@@ -90,7 +90,7 @@
 .PlanDetails__machines {
   margin-top: 1.5%;
   width: 100%;
-  height: 78.5%;
+  height: 70%;
   display: flex;
   justify-content: center;
   align-items: center;
