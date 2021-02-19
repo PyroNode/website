@@ -19,6 +19,10 @@
 
   /* Home Page */
 
+  .TrustPilot__container {
+    bottom: 30% !important;
+  }
+
   /* Discord Page */
 
   .Discord__hero {
