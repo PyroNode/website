@@ -6,6 +6,7 @@ import Minecraft from "../Pages/Minecraft";
 import Discord from "../Pages/Discord";
 import TS3 from "../Pages/TS3";
 import WebHosting from "../Pages/WebHosting";
+import VPS from "../Pages/VPS";
 import NotFound from "../Pages/NotFound";
 
 import "../styles/Responsive.css";
@@ -30,6 +31,7 @@ const App = () => {
         <Route exact path="/discord" component={Discord} />
         <Route exact path="/voice" component={TS3} />
         <Route exact path="/web" component={WebHosting} />
+        <Route exact path="/vps" component={VPS} />
         <Route component={NotFound} />
       </Switch>
     </BrowserRouter>

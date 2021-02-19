@@ -14,8 +14,10 @@ const WebPlanItem = ({ content, itemIndex, lengthY, lengthX }) => {
     <>
       <div style={widthStyles} className="WebPlanItem__item">
         <div
-          className={`WebPlanItem__container ${itemIndex===0 && "WebPlanItem__container-first_child"} ${
-            itemIndex === 3 && "WebPlanItem__container-last_child"
+          className={`WebPlanItem__container ${
+            itemIndex === 0 && "WebPlanItem__container-first_child"
+          } ${
+            itemIndex === lengthX - 1 && "WebPlanItem__container-last_child"
           }`}
         >
           {content.rows.map((row) => {
@@ -31,8 +33,8 @@ const WebPlanItem = ({ content, itemIndex, lengthY, lengthX }) => {
                     <img src={row.photo} />
                   )}
 
-                  {content.rows.indexOf(row) === 8 &&
-                  itemIndex <= 3 &&
+                  {content.rows.indexOf(row) === lengthY - 1 &&
+                  itemIndex <= lengthX - 1 &&
                   itemIndex >= 1 ? (
                     <>
                       <div className="WebPlanItem__button">

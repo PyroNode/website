@@ -856,6 +856,166 @@ const initialState = {
         ],
       },
     },
+    vps: {
+      hero: {
+        title: "Hosting de VPS",
+        subtitle: "¡Para lo que quieras!",
+        desc:
+          "Da vida a tu página personal o a tus proyectos mostrando una página web, o utilizala para lo que quieras. Con nuestro alojamiento de VPS podrás hacer esto sin complicaciones",
+        photo:
+          "https://static.wixstatic.com/media/c545ec_0f6c90577fa44db5a9ec7ad78479e366~mv2.png/v1/fill/w_381,h_319,al_c,q_85,usm_0.66_1.00_0.01/PngItem_3577264.webp",
+        buttonUrl: "#planes",
+        buttonText: "Ver planes",
+      },
+      plans: {
+        list: [
+          {
+            rows: [
+              {
+                photo: "https://i.imgur.com/NiuAXdD.png",
+                value: "Plan",
+              },
+
+              {
+                photo: "https://i.imgur.com/De6y63y.png",
+                value: "vCores",
+              },
+
+              {
+                photo: "https://i.imgur.com/8iFkQ8X.png",
+                value: "Almacenamiento",
+              },
+              {
+                photo: "https://i.imgur.com/S4BAJ8e.png",
+                value: "Memoria RAM",
+              },
+              {
+                photo: "https://i.imgur.com/LkHBcaG.png",
+                value: "Coste",
+              },
+              {
+                value: "",
+              },
+            ],
+          },
+          {
+            rows: [
+              {
+                value: "Mini",
+              },
+              {
+                value: "1",
+              },
+              {
+                value: "20GB",
+              },
+              {
+                value: "512MB",
+              },
+              {
+                value: "1.59€",
+              },
+              {
+                value: "ADQUIRIR",
+                url: "https://billing.pyronode.com/cart.php?a=add&pid=1",
+              },
+            ],
+          },
+          {
+            rows: [
+              {
+                value: "Classic",
+              },
+              {
+                value: "1",
+              },
+              {
+                value: "20GB",
+              },
+              {
+                value: "1GB",
+              },
+              {
+                value: "2.44€",
+              },
+              {
+                value: "ADQUIRIR",
+                url: "https://billing.pyronode.com/cart.php?a=add&pid=1",
+              },
+            ],
+          },
+          {
+            rows: [
+              {
+                value: "Normal",
+              },
+              {
+                value: "2",
+              },
+              {
+                value: "30GB",
+              },
+              {
+                value: "2GB",
+              },
+              {
+                value: "3.07€",
+              },
+              {
+                value: "ADQUIRIR",
+                url: "https://billing.pyronode.com/cart.php?a=add&pid=1",
+              },
+            ],
+          },
+          {
+            rows: [
+              {
+                value: "Advanced",
+              },
+              {
+                value: "2",
+              },
+              {
+                value: "40GB",
+              },
+              {
+                value: "4GB",
+              },
+              {
+                value: "4.33€",
+              },
+              {
+                value: "ADQUIRIR",
+                url: "https://billing.pyronode.com/cart.php?a=add&pid=1",
+              },
+            ],
+          },
+          {
+            rows: [
+              {
+                value: "Ultimate",
+              },
+              {
+                value: "4",
+              },
+              {
+                value: "50GB",
+              },
+              {
+                value: "6GB",
+              },
+              {
+                value: "5.59€",
+              },
+              {
+                value: "ADQUIRIR",
+                url: "https://billing.pyronode.com/cart.php?a=add&pid=1",
+              },
+            ],
+          },
+        ],
+      },
+    },
   },
 };
 

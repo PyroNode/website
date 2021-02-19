@@ -1,0 +1,124 @@
+.VPS__Page {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+
+.VPS__Page .Web__plans {
+  width: 80%;
+}
+
+.VPS__Page .WebPlanItem__container-last_child {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.VPS__Page .WebPlanItem__row-5_5 {
+  border-bottom-right-radius: 20px;
+}
+
+.VPS__Page .WebPlanItem__container-first_child {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.WebPlanItem__row-0_0,
+.WebPlanItem__row-1_0,
+.WebPlanItem__row-2_0,
+.WebPlanItem__row-3_0,
+.WebPlanItem__row-4_0,
+.WebPlanItem__row-5_0,
+.WebPlanItem__row-6_0,
+.WebPlanItem__row-7_0,
+.WebPlanItem__row-8_0 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.VPS__Page .WebPlanItem__row-0_0 p,
+.VPS__Page .WebPlanItem__row-1_0 p,
+.VPS__Page .WebPlanItem__row-2_0 p,
+.VPS__Page .WebPlanItem__row-3_0 p,
+.VPS__Page .WebPlanItem__row-4_0 p,
+.VPS__Page .WebPlanItem__row-5_0 p,
+.VPS__Page .WebPlanItem__row-6_0 p,
+.VPS__Page .WebPlanItem__row-7_0 p,
+.VPS__Page .WebPlanItem__row-8_0 p {
+  font-size: 1vw;
+  font-weight: 600;
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Open Sans", "Helvetica Neue", sans-serif;
+  padding-bottom: 1%;
+  text-transform: uppercase;
+  margin-left: 5%;
+}
+
+.VPS__Page .WebPlanItem__row-0_0 img,
+.VPS__Page .WebPlanItem__row-1_0 img,
+.VPS__Page .WebPlanItem__row-2_0 img,
+.VPS__Page .WebPlanItem__row-3_0 img,
+.VPS__Page .WebPlanItem__row-4_0 img,
+.VPS__Page .WebPlanItem__row-5_0 img,
+.VPS__Page .WebPlanItem__row-6_0 img,
+.VPS__Page .WebPlanItem__row-7_0 img,
+.VPS__Page .WebPlanItem__row-8_0 img {
+  width: 10%;
+  margin-left: 9%;
+}
+
+.VPS__Page .WebPlanItem__row-0_1 p,
+.VPS__Page .WebPlanItem__row-0_2 p,
+.VPS__Page .WebPlanItem__row-0_3 p,
+.VPS__Page .WebPlanItem__row-0_4 p,
+.VPS__Page .WebPlanItem__row-0_5 p {
+  text-transform: uppercase;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 2vw;
+  border-bottom: 1px solid #e87840;
+  transition: 0.5s;
+}   
+
+.VPS__Page .WebPlanItem__row-0_1 p:hover,
+.VPS__Page .WebPlanItem__row-0_2 p:hover,
+.VPS__Page .WebPlanItem__row-0_3 p:hover,
+.VPS__Page .WebPlanItem__row-0_4 p:hover,
+.VPS__Page .WebPlanItem__row-0_5 p:hover {
+  transform: scale(1.1);
+}
+
+.VPS__Page .WebPlanItem__row-4_1 p,
+.VPS__Page .WebPlanItem__row-4_2 p,
+.VPS__Page .WebPlanItem__row-4_3 p,
+.VPS__Page .WebPlanItem__row-4_4 p,
+.VPS__Page .WebPlanItem__row-4_5 p {
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.933);
+  color: #e87840;
+  transition: 0.5s;
+}
+
+.VPS__Page .WebPlanItem__row-4_1 p:hover,
+.VPS__Page .WebPlanItem__row-4_2 p:hover,
+.VPS__Page .WebPlanItem__row-4_3 p:hover,
+.VPS__Page .WebPlanItem__row-4_4 p:hover,
+.VPS__Page .WebPlanItem__row-4_5 p:hover {
+  transform: scale(1.1);
+}
+
+.WebPlanItem__button {
+  width: 70%;
+  height: 60%;
+  background: #e87840;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.WebPlanItem__button a {
+  color: white;
+  text-decoration: none;
+}
