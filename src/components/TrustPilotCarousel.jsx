@@ -86,7 +86,6 @@ const TrustPilotCarousel = ({ items, active_item, setActiveTPItem }) => {
             <img src={left} alt="" />
           </div>
         </div>
-        <CarouselDotsControler index={index} arrayLength={items.length} />
 
         <div className="TrustPilot__container">
           <TrustPilotContainer />
