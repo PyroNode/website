@@ -5,7 +5,7 @@ import { Fade } from "react-awesome-reveal";
 import "../styles/PlansController.css";
 import PlanDetails from "./PlanDetails";
 
-const PlansController = ({ plans, activePlans }) => {
+const PlansController = ({ plans, activePlans, isMobile }) => {
   const [index, setIndex] = useState(0);
   const [change, setChange] = useState(false);
   let taskId = 0;
@@ -49,7 +49,11 @@ const PlansController = ({ plans, activePlans }) => {
       </div>
       <div className="Plans__container-details">
         <Fade className="react-reveal">
-          <PlanDetails change={change} content={plans[index]} />  
+          <PlanDetails
+            change={change}
+            isMobile={isMobile}
+            content={plans[index]}
+          />
         </Fade>
       </div>
     </>

@@ -3,13 +3,14 @@ import classnames from "classnames";
 
 import "../styles/MachineItem.css";
 
-const MachineItem = ({ content, isCard }) => {
+const MachineItem = ({ content, isCard, isMobile, isSingle }) => {
   const customclass = classnames(
     "MachineItem__content",
     `${content.best_option ? "best_option" : ""}`,
     `${content.recommended ? "recommended" : ""}`,
     `${content.recommended_for_mods ? "recommended_for_mods" : ""}`
   );
+
 
   if (isCard) {
     return (
@@ -47,6 +48,34 @@ const MachineItem = ({ content, isCard }) => {
                     <p>ADQUIRIR</p>
                   </a>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </>
+    );
+  }
+
+  if (isSingle) {
+    return (
+      <>
+        <div className="MachineItem__container">
+          <div className={customclass}>
+            <div className="MachineItem__title">
+              <img src={content.icon} alt={content.title} />
+
+              <p>{content.title.toUpperCase()}</p>
+            </div>
+            <div className="MachineItem__ram">
+              <p>{content.ram}</p>
+              <span>RAM</span>
+            </div>
+
+            <div className="MachineItem__button">
+              <div>
+                <a href={content.url}>
+                  <p>ADQUIRIR</p>
+                </a>
               </div>
             </div>
           </div>

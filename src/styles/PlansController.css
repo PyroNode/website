@@ -58,6 +58,7 @@
   align-items: center;
 }
 
+
 .PlanDetails__firstColumn {
   margin-bottom: 2%;
 }
@@ -86,7 +87,7 @@
   font-weight: 300;
   margin-top: 5%;
 }
-
+  
 .PlanDetails__machines {
   margin-top: 1.5%;
   width: 100%;

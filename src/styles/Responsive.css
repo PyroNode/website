@@ -309,17 +309,272 @@
 
   /* MINECRAFT */
 
+  .Minecraft__Page {
+    height: auto;
+  }
+
+  .Minecraft__Page > div {
+    display: none;
+  }
+
+  .Minecraft__Page .Minecraft__hero-container {
+    height: 70vw;
+    display: flex;
+  }
+
+  .Minecraft__Page .CarouselItem__info {
+    padding: 0 10%;
+    margin-top: 0;
+  }
+
+  .Minecraft__Page .CarouselItem__info h2 {
+    font-size: 3vw;
+  }
+
+  .Minecraft__Page .CarouselItem__button {
+    width: 60%;
+  }
+
+  .Minecraft__hero {
+    width: 90%;
+  }
+
+  .Minecraft__Page .Plans__container-details {
+    display: flex;
+  }
+
+  .Plans__container-details .react-reveal {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .PlanDetails__modal {
     border-radius: 10px;
+    height: 75vw;
+    width: 90%;
+    justify-content: center;
+  }
+
+  .PlanDetails__columns {
+    height: 90%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .PlanDetails__1,
+  .PlanDetails__2,
+  .PlanDetails__3,
+  .PlanDetails__4 {
+    height: 33.3%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Minecraft__Page .PlanDetails__item {
+    justify-content: center;
+    padding: 0 2%;
+  }
+
+  .Minecraft__Page .PlanDetails__item img {
+    margin-bottom: 0;
+  }
+
+  .Minecraft__Page .PlanDetails__item h1 {
+    font-size: 2.5vw;
+  }
+
+  .PlanDetails__modal-2 {
+    height: auto;
+  }
+
+  .PlanDetails__modal-2 .PlanDetails__machines {
+    height: 100%;
+    flex-direction: column;
+  }
+  .PlanDetails__modal-2 .PlanDetails__machines > div {
+    height: 27.5vw;
+    width: 100%;
+  }
+
+  .PlanDetails__modal-2 .PlanDetails__machines > div .MachineItem__content {
+    height: 80%;
+  }
+
+  .PlanDetails__modal-2
+    .PlanDetails__machines
+    > div
+    .MachineItem__content
+    .MachineItem__title
+    img {
+    height: 60%;
+  }
+
+  .PlanDetails__modal-2
+    .PlanDetails__machines
+    > div
+    .MachineItem__content
+    .MachineItem__title
+    p {
+    font-size: 3.8vw;
+  }
+
+  .PlanDetails__modal-2
+    .PlanDetails__machines
+    > div
+    .MachineItem__content
+    .MachineItem__ram
+    p {
+    font-size: 5vw;
+    color: white;
+  }
+
+  .PlanDetails__modal-2
+    .PlanDetails__machines
+    > div
+    .MachineItem__content
+    .MachineItem__ram
+    span {
+    font-size: 2.85vw;
+    color: white;
+  }
+
+  .PlanDetails__modal-2
+    .PlanDetails__machines
+    > div
+    .MachineItem__content
+    .MachineItem__price
+    p {
+    font-size: 5vw;
+    color: white;
+  }
+
+  .PlanDetails__modal-2
+    .PlanDetails__machines
+    > div
+    .MachineItem__content
+    .MachineItem__price
+    span {
+    font-size: 2.85vw;
+    color: white;
+  }
+
+  .PlanDetails__modal-2
+    .PlanDetails__machines
+    > div
+    .MachineItem__content
+    .MachineItem__button
+    > div
+    > a
+    > p {
+    font-size: 2.85vw;
+    color: black;
   }
 
   .MachineItem__content {
-    border-radius: 2px;
+    border-radius: 8px;
   }
 
   .MachineItem__title {
-    border-top-left-radius: 2px;
-    border-bottom-left-radius: 2px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+
+  .PlanDetails__modal-2 .PlanDetails__machines .MachineItem__card {
+    height: 50vw;
+  }
+
+  .PlanDetails__modal-2
+    .PlanDetails__machines
+    > .MachineItem__card
+    .MachineItem__content {
+    height: 90%;
+  }
+
+  .PlanDetails__modal-2
+    .PlanDetails__machines
+    > .MachineItem__card
+    .MachineItem__content
+    .MachineItem__card-info
+    .MachineItem__card-info-title
+    p {
+    font-size: 5vw;
+    color: white;
+  }
+
+  .PlanDetails__modal-2
+    .PlanDetails__machines
+    > .MachineItem__card
+    .MachineItem__content
+    .MachineItem__card-specDiv {
+    height: 55%;
+    padding-bottom: 5%;
+  }
+
+  .PlanDetails__modal-2
+    .PlanDetails__machines
+    > .MachineItem__card
+    .MachineItem__content
+    .MachineItem__card-spec {
+    width: 80%;
+    height: 40%;
+    margin-top: 0;
+  }
+
+  .PlanDetails__modal-2
+    .PlanDetails__machines
+    > .MachineItem__card
+    .MachineItem__content
+    .MachineItem__card-spec-half {
+    width: 50%;
+    height: 90%;
+    font-size: 4vw;
+    color: white;
+  }
+
+  .PlanDetails__modal-2
+    .PlanDetails__machines
+    > .MachineItem__card
+    .MachineItem__content
+    .MachineItem__card-button {
+    height: 25%;
+    margin: 0;
+  }
+  . .PlanDetails__modal-2 .PlanDetails__machines > .MachineItem__single {
+    height: 32.5vw;
+  }
+
+  .PlanDetails__modal-2
+    .PlanDetails__machines
+    > .MachineItem__single
+    .MachineItem__content {
+    width: 90%;
+  }
+
+  .PlanDetails__modal-2
+    .PlanDetails__machines
+    > .MachineItem__single
+    .MachineItem__content
+    .MachineItem__title {
+    width: 42.5%;
+  }
+
+  .PlanDetails__modal-2
+    .PlanDetails__machines
+    > .MachineItem__single
+    .MachineItem__content
+    .MachineItem__title
+    > p {
+    margin: 0;
+  }
+
+  .PlanDetails__modal-2
+    .PlanDetails__machines
+    > .MachineItem__single
+    .MachineItem__content
+    .MachineItem__ram {
+    width: 40%;
   }
 
   /* DISCORD */
@@ -489,7 +744,7 @@
 @media only screen and (min-width: 0px) and (max-width: 900px) {
   .Layout {
     background-image: url("https://i.imgur.com/5IbOVaI.png");
-    background-position: right;
+    background-position: 70%;
     background-size: cover;
     background-clip: content-box;
     background-repeat: no-repeat;

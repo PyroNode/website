@@ -3,7 +3,7 @@ import React from "react";
 import "../styles/Carousel.css";
 import { Link } from "react-router-dom";
 
-const CarouselItem = ({ content, isInPage, isMobile }) => {
+const CarouselItem = ({ content, isInPage, isMobile, isInMainCarousel }) => {
   const titleArr = content.title.toUpperCase().split("\n");
 
   if (isMobile) {
@@ -22,6 +22,8 @@ const CarouselItem = ({ content, isInPage, isMobile }) => {
             <h2>{content.subtitle}</h2>
             <p>{content.desc}</p>
 
+            {}
+
             {!isInPage ? (
               <Link
                 className="CarouselItem__td"
@@ -29,7 +31,7 @@ const CarouselItem = ({ content, isInPage, isMobile }) => {
               >
                 <span className="CarouselItem__button">Ver más</span>
               </Link>
-            ) : (
+            ) : isInMainCarousel ? (
               <a
                 className="CarouselItem__td"
                 href={content.buttonUrl !== undefined ? content.buttonUrl : "#"}
@@ -38,6 +40,8 @@ const CarouselItem = ({ content, isInPage, isMobile }) => {
                   {content.buttonText}
                 </span>
               </a>
+            ) : (
+              <></>
             )}
           </div>
         </div>

@@ -9,6 +9,53 @@ import "../styles/WebHosting.css";
 import { connect } from "react-redux";
 
 const WebHosting = ({ hero, plans }) => {
+  const [height, setHeight] = React.useState(0);
+  const [width, setWidth] = React.useState(0);
+
+  setTimeout(() => {
+    setHeight(document.body.scrollHeight);
+    setWidth(document.body.scrollWidth);
+    console.log(height);
+    console.log(width);
+  }, 0);
+
+  if (width <= 800) {
+    return (
+      <>
+        <Layout>
+          <div className="Web__Page">
+            <div className="Web__container">
+              <div className="Web__hero-container">
+                <div className="Web__hero">
+                  <CarouselItem content={hero} isMobile isInPage />
+                </div>
+              </div>
+            </div>
+
+            <div className="Web__plans-container">
+              <div className="Web__plans">
+                {plans.map((item) => {
+                  console.log(plans.length);
+                  return (
+                    <WebPlanItem
+                      key={plans.indexOf(item)}
+                      content={item}
+                      itemIndex={plans.indexOf(item)}
+                      lengthX={plans.length}
+                      lengthY={item.rows.length}
+                      isMobile
+                    />
+                  );
+                })}
+              </div>
+            </div>
+            <PoweredBy cPanel isMobile />
+          </div>
+        </Layout>
+      </>
+    );
+  }
+
   return (
     <>
       <Layout>

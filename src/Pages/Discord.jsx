@@ -9,10 +9,34 @@ import DiscordPlans from "../components/DiscordPlans";
 import PoweredBy from "../components/PoweredBy";
 
 const Discord = ({ hero, content, plans }) => {
-  const styles = {
-    width: "calc(220vh)",
-    left: "calc(-5% + -10vw)",
-  };
+  const [height, setHeight] = React.useState(0);
+  const [width, setWidth] = React.useState(0);
+
+  setTimeout(() => {
+    setHeight(document.body.scrollHeight);
+    setWidth(document.body.scrollWidth);
+    console.log(height);
+    console.log(width);
+  }, 0);
+
+  if (width <= 800) {
+    return (
+      <>
+        <Layout headerDark={false}>
+          <div className="Discord__Page">
+            <div className="Discord__hero-container">
+              <div className="Discord__hero">
+                <CarouselItem isMobile isInPage content={hero} />
+              </div>
+            </div>
+            <DiscordFeatures isMobile content={content} />
+            <DiscordPlans isMobile content={plans} />
+            <PoweredBy isMobile />
+          </div>
+        </Layout>
+      </>
+    );
+  }
 
   return (
     <>

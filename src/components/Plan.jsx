@@ -13,7 +13,7 @@ const Plan = ({ content, handleClick }) => {
 
     setTimeout(() => {
       setStyle("Plan__button Plan__transition");
-    }, 750*2+250);
+    }, 750 * 2 + 250);
   };
 
   return (
@@ -49,7 +49,7 @@ const Plan = ({ content, handleClick }) => {
           <div
             onClick={() => {
               handleClick(content.id);
-              handleStyles()
+              handleStyles();
             }}
             className={style}
           >
