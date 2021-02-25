@@ -888,6 +888,89 @@ const initialState = {
             ],
           },
         ],
+        mobileList: [
+          {
+            title: "PLAN BASIC",
+            subtitle: "Hosteado en Europa",
+            photo: "https://i.imgur.com/lylROAO.png",
+            desc: [
+              {
+                value: "Almacenamiento SSD: 15GB",
+              },
+              {
+                value: "Sitios Web: 1",
+              },
+              {
+                value: "Subdominios: Ilimitados",
+              },
+              {
+                value: "Bandejas de correo: 10",
+              },
+              {
+                value: "Bases de datos: 10",
+              },
+              {
+                value: "Memoria RAM: 1GB",
+              }
+            ],
+            price: "2,49€",
+            buttonText: "Ver más",
+          },
+          {
+            title: "PLAN ULTRA",
+            subtitle: "Hosteado en Europa",
+            photo: "https://i.imgur.com/lylROAO.png",
+            desc: [
+              {
+                value: "Almacenamiento SSD: Ilimitado",
+              },
+              {
+                value: "Sitios Web: 10",
+              },
+              {
+                value: "Subdominios: Ilimitados",
+              },
+              {
+                value: "Bandejas de correo: 100",
+              },
+              {
+                value: "Bases de datos: 10",
+              },
+              {
+                value: "Memoria RAM: 1.5GB",
+              },
+            ],
+            price: "3.99€",
+            buttonText: "Ver más",
+          },
+          {
+            title: "PLAN MASTER",
+            subtitle: "Hosteado en Europa",
+            photo: "https://i.imgur.com/lylROAO.png",
+            desc: [
+              {
+                value: "Almacenamiento SSD: Ilimitado",
+              },
+              {
+                value: "Sitios Web: Ilimitados",
+              },
+              {
+                value: "Subdominios: Ilimitados",
+              },
+              {
+                value: "Bandejas de correo: Ilimitadas",
+              },
+              {
+                value: "Bases de datos: Ilimitadas",
+              },
+              {
+                value: "Memoria RAM: 2GB",
+              },
+            ],
+            price: "6.99€",
+            buttonText: "Ver más",
+          },
+        ],
       },
     },
     vps: {
@@ -1046,6 +1129,98 @@ const initialState = {
                 url: "https://billing.pyronode.com/cart.php?a=add&pid=1",
               },
             ],
+          },
+        ],
+        mobileList: [
+          {
+            title: "PLAN MINI",
+            subtitle: "Hosteado en Europa",
+            photo: "https://i.imgur.com/8iFkQ8X.png",
+            desc: [
+              {
+                value: "vCores: 1",
+              },
+              {
+                value: "Storage: 20GB NVMe SSD",
+              },
+              {
+                value: "RAM: 512MB",
+              },
+            ],
+            price: "1,59€",
+            buttonText: "Ver más",
+          },
+          {
+            title: "PLAN CLASSIC",
+            subtitle: "Hosteado en Europa",
+            photo: "https://i.imgur.com/8iFkQ8X.png",
+            desc: [
+              {
+                value: "vCores: 1",
+              },
+              {
+                value: "Storage: 20GB NVMe SSD",
+              },
+              {
+                value: "RAM: 1GB",
+              },
+            ],
+            price: "2,44€",
+            buttonText: "Ver más",
+          },
+          {
+            title: "PLAN NORMAL",
+            subtitle: "Hosteado en Europa",
+            photo: "https://i.imgur.com/8iFkQ8X.png",
+            desc: [
+              {
+                value: "vCores: 2",
+              },
+              {
+                value: "Storage: 30GB NVMe SSD",
+              },
+              {
+                value: "RAM: 2GB",
+              },
+            ],
+            price: "3,07€",
+            buttonText: "Ver más",
+          },
+          {
+            title: "PLAN ADVANCED",
+            subtitle: "Hosteado en Europa",
+            photo: "https://i.imgur.com/8iFkQ8X.png",
+            desc: [
+              {
+                value: "vCores: 2",
+              },
+              {
+                value: "Storage: 40GB NVMe SSD",
+              },
+              {
+                value: "RAM: 4GB",
+              },
+            ],
+            price: "4,33€",
+            buttonText: "Ver más",
+          },
+          {
+            title: "PLAN ULTIMATE",
+            subtitle: "Hosteado en Europa",
+            photo: "https://i.imgur.com/8iFkQ8X.png",
+            desc: [
+              {
+                value: "vCores: 4",
+              },
+              {
+                value: "Storage: 50GB NVMe SSD",
+              },
+              {
+                value: "RAM: 6GB",
+              },
+            ],
+            price: "5,59€",
+            buttonText: "Ver más",
           },
         ],
       },

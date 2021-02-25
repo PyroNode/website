@@ -438,6 +438,10 @@
     transition: 0.8s;
   }
 
+  .Header__links {
+    align-items: center;
+  }
+
   .Header__expand .Header__links p {
     font-size: 2.5vw;
   }
@@ -500,7 +504,7 @@
     justify-content: center;
   }
 
-  .Minecraft__Page .MachineItem__card-button a p{
+  .Minecraft__Page .MachineItem__card-button a p {
     font-size: 2.85vw;
   }
 
@@ -988,15 +992,6 @@
     width: 60%;
   }
 
-  .Web__Page .Web__plans-container{
-    height: 90vw;
-  }
-
-  .Web__Page .Web__plans {
-    width: 95%;
-  }
-
-
   /* VPS LINUX */
 
   .VPS__Page {
@@ -1022,19 +1017,54 @@
     width: 60%;
   }
 
-  .VPS__Page .Web__plans-container{
+  .VPS__Page .Web__plans-container {
     height: 80vw;
     width: 100%;
   }
 
-  .VPS__Page .Web__plans{
+  .VPS__Page .Web__plans {
     width: 90%;
+  }
+
+  .VPS__Page .Web__plans-container {
+    height: auto;
+    width: 100%;
+  }
+
+  .VPS__Page .Web__mobilePlans {
+    width: 95%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .VPS__Page .Web__mobilePlans .TS3PlanItem__desc {
+    padding-top: 5%;
   }
 
   /* WEB */
 
+  .Web__Page .Web__plans-container {
+    height: auto;
+  }
 
+  .Web__Page .Web__mobilePlans {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 
+  .Web__Page .TS3PlanItem__item {
+    height: 80vw;
+  }
+
+  .Web__Page .TS3PlanItem__desc {
+    padding-top: 0;
+  }
 
   /* FOOTER */
 
@@ -1070,8 +1100,7 @@
     margin: 20% 10%;
   }
 
-
-  .footer h1{
+  .footer h1 {
     font-size: 3.4vw;
   }
 
@@ -1194,33 +1223,36 @@
   }
 
   .TS3PlanItem__button-container h1 {
-    font-size: 3vw;
-  }
-
-  .TS3PlanItem__priceSide > p{
-    font-size: 4.6vw;
-  }
-
-  .TS3PlanItem__priceButton > p{
-    font-size: 3vw;
-  }
-
-  .TS3PlanItem__titleSide h1{
-    font-size: 4.6vw;
-  }
-
-  .TS3PlanItem__titleSide p{
-    font-size: 3.3vw;
-  }
-
-  .TS3PlanItem__desc{
-    padding-top: 7.5%;
-  }
-
-  .TS3PlanItem_descItem{
     font-size: 2.7vw;
   }
 
+  .TS3PlanItem__button-container:hover h1 {
+    font-size: 3.2vw !important;
+  }
+
+  .TS3PlanItem__priceSide > p {
+    font-size: 4.6vw;
+  }
+
+  .TS3PlanItem__priceButton > p {
+    font-size: 3vw;
+  }
+
+  .TS3PlanItem__titleSide h1 {
+    font-size: 4.6vw;
+  }
+
+  .TS3PlanItem__titleSide p {
+    font-size: 3.3vw;
+  }
+
+  .TS3PlanItem__desc {
+    padding-top: 7.5%;
+  }
+
+  .TS3PlanItem_descItem {
+    font-size: 2.7vw;
+  }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 1100px) {

@@ -4,11 +4,12 @@ import Layout from "../components/Layout";
 import CarouselItem from "../components/CarouselItem";
 import PoweredBy from "../components/PoweredBy";
 import WebPlanItem from "../components/WebPlanItem";
+import TS3PlanItem from "../components/TS3PlanItem";
 import "../styles/VPS.css";
 
 import { connect } from "react-redux";
 
-const VPS = ({ hero, plans }) => {
+const VPS = ({ hero, plans, mobilePlans }) => {
   const [height, setHeight] = React.useState(0);
   const [width, setWidth] = React.useState(0);
 
@@ -33,18 +34,12 @@ const VPS = ({ hero, plans }) => {
             </div>
 
             <div className="Web__plans-container">
-              <div className="Web__plans">
-                {plans.map((item) => {
-                  console.log(plans.length);
+              <div className="Web__mobilePlans">
+                {mobilePlans.map((plan) => {
                   return (
-                    <WebPlanItem
-                      key={plans.indexOf(item)}
-                      content={item}
-                      itemIndex={plans.indexOf(item)}
-                      lengthX={plans.length}
-                      lengthY={item.rows.length}
-                      isMobile
-                      isVPS
+                    <TS3PlanItem
+                      key={mobilePlans.indexOf(plan)}
+                      content={plan}
                     />
                   );
                 })}
@@ -97,6 +92,7 @@ const mapStateToProps = (state) => {
   return {
     hero: state.pages.vps.hero,
     plans: state.pages.vps.plans.list,
+    mobilePlans: state.pages.vps.plans.mobileList,
   };
 };
 

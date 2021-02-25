@@ -15,11 +15,48 @@ const Header = ({ width, dark, headerItems }) => {
   const [showHeaderItem2, setVisibilityItem2] = React.useState(false);
   const [headerExpandClass, setClassHeader] = React.useState("");
 
+  const [showHeaderItemPC, setVisibilityItemPC] = React.useState(false);
+  const [showHeaderItemPC2, setVisibilityItemPC2] = React.useState(false);
+  const [headerPCItem, setHPCItemClass] = React.useState("");
+  const [headerPCItem2, setHPCItemClass2] = React.useState("");
+
   const widthDark = width <= 800 ? true : false;
 
   const headerClass = classNames("Header__header", {
     dark,
   });
+
+  React.useEffect(() => {
+    if (showHeaderItemPC2) {
+      if (headerPCItem === " ") {
+        setHPCItemClass("Header__clickActivePC");
+      } else {
+        setHPCItemClass(" ");
+      }
+      setVisibilityItemPC2(false);
+    }
+    if (headerPCItem === " ") {
+      setHPCItemClass("Header__clickActivePC");
+    } else {
+      setHPCItemClass(" ");
+    }
+  }, [showHeaderItemPC]);
+
+  React.useEffect(() => {
+    if (showHeaderItemPC) {
+      if (headerPCItem2 === " ") {
+        setHPCItemClass2("Header__clickActivePC");
+      } else {
+        setHPCItemClass2(" ");
+      }
+      setVisibilityItemPC(false);
+    }
+    if (headerPCItem2 === " ") {
+      setHPCItemClass2("Header__clickActivePC");
+    } else {
+      setHPCItemClass2(" ");
+    }
+  }, [showHeaderItemPC2]);
 
   React.useEffect(() => {
     if (imgClass === "") {
@@ -187,39 +224,50 @@ const Header = ({ width, dark, headerItems }) => {
             </Link>
           </div>
 
-          <div className="Header__Productos">
-            <p>Productos</p>
+          <div className="Header__Productos-PC">
+            <p
+              onClick={() => {
+                setVisibilityItemPC(!showHeaderItemPC);
+              }}
+            >
+              Productos
+            </p>
+            <div className={`Header__product-hover-PC ${headerPCItem}`}>
+              <Link to="/minecraft">
+                <p>Minecraft</p>
+              </Link>
+              <Link to="/vps">
+                <p>VPS</p>
+              </Link>
+              <Link to="/voice">
+                <p>TS3</p>
+              </Link>
+              <Link to="/discord">
+                <p>Bots Discord</p>
+              </Link>
+              <Link to="/web">
+                <p>Hosting Web</p>
+              </Link>
+            </div>
           </div>
 
-          <div className="Header__Pages">
-            <p>Páginas</p>
-          </div>
+          <div className="Header__Pages-PC">
+            <p
+              onClick={() => {
+                setVisibilityItemPC2(!showHeaderItemPC2);
+              }}
+            >
+              Páginas
+            </p>
 
-          <div className="Header__product-hover">
-            <Link to="/minecraft">
-              <p>Minecraft</p>
-            </Link>
-            <Link to="/vps">
-              <p>VPS</p>
-            </Link>
-            <Link to="/voice">
-              <p>TS3</p>
-            </Link>
-            <Link to="/discord">
-              <p>Bots Discord</p>
-            </Link>
-            <Link to="/web">
-              <p>Hosting Web</p>
-            </Link>
-          </div>
-
-          <div className="Header__pages-hover">
-            <a href="https://billing.pyronode.com/clientarea.php">
-              <p>Área de Clientes</p>
-            </a>
-            <a href="https://panel.pyronode.com/">
-              <p>Panel de Juegos</p>
-            </a>
+            <div className={`Header__pages-hover-PC ${headerPCItem2}`}>
+              <a href="https://billing.pyronode.com/clientarea.php">
+                <p>Área de Clientes</p>
+              </a>
+              <a href="https://panel.pyronode.com/">
+                <p>Panel de Juegos</p>
+              </a>
+            </div>
           </div>
         </div>
       </header>

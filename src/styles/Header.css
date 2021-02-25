@@ -1,5 +1,5 @@
 .Header__header {
-  z-index: 1;
+  z-index: 3;
   position: relative;
   height: 6vw;
   display: flex;
@@ -55,8 +55,9 @@
   width: 50%;
   height: 100%;
   justify-content: flex-end;
-  align-items: center;
+  align-items: flex-start;
   padding-right: 5%;
+  padding-top: 1.2%;
 }
 
 .Header__links img {
@@ -87,88 +88,56 @@
   opacity: 0;
 }
 
-.Header__product-hover {
-  position: absolute;
-  top: 90%;
-  /* right: -15%; */
-  right: 14.6vw;
+.Header__product-hover-PC,
+.Header__pages-hover-PC {
   background: rgba(35, 39, 42, 1);
   color: white;
   transition: 0.5s;
-  opacity: 0;
   border-radius: 4px;
-}
-
-.Header__pages-hover {
-  position: absolute;
-  top: 90%;
-  /* right: -15%; */
-  right: 5.85vw;
-  background: rgba(35, 39, 42, 1);
-  color: white;
-  transition: 0.5s;
   opacity: 0;
-  border-radius: 4px;
+  position: relative;
+  z-index: 4;
+  pointer-events: none;
+  margin-top: 10%;
 }
 
 .Header__Productos,
-.Header__pages {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.Header__Pages {
+  height: auto;
 }
 
-.Header__product-hover,
-.Header__pages-hover {
-  transition-delay: 50ms;
-}
-
-.Header__Productos:hover ~ .Header__product-hover {
+.Header__clickActivePC {
   opacity: 1;
-  /* right: 14.6vw; */
-}
-
-.Header__Pages:hover ~ .Header__pages-hover {
-  opacity: 1;
-  /* right: 5.85vw; */
+  pointer-events: all;
 }
 
 .Header__links .Header__Inicio,
-.Header__links .Header__Productos,
-.Header__links .Header__Pages {
+.Header__links .Header__Productos-PC,
+.Header__links .Header__Pages-PC {
   width: 8vw;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   transition: 0.5s;
+  flex-direction: column;
 }
 
-.Header__Productos:hover {
-  width: 12.5vw;
+/* 
+.Header__links .Header__Productos-PC {
+  margin-top: 10.75vw;
 }
 
-.Header__Pages:hover .Header__links .Header__Inicio,
-.Header__Pages:hover .Header__links .Header_Pages {
-  width: 8vw;
-}
+.Header__links .Header__Pages-PC {
+  margin-top: 7.4vw;
+} */
 
-.Header__Pages:hover {
-  width: 12.5vw;
-}
-
-.Header__Pages:hover .Header__links .Header__Inicio,
-.Header__Pages:hover .Header__links .Header_Productos {
-  width: 8vw;
-}
-
-.Header__product-hover > a > p {
+.Header__product-hover-PC > a > p {
   font-size: 0.9vw;
   margin-top: 5%;
   margin-bottom: 5%;
 }
 
-.Header__pages-hover > a > p {
+.Header__pages-hover-PC > a > p {
   font-size: 0.9vw;
   margin-top: 10%;
   margin-bottom: 10%;
