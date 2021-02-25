@@ -122,6 +122,40 @@ const initialState = {
         "Gracias a este host Mintos se mantiene día a día con una buena calidad.",
     },
   ],
+  header: [
+    [
+      {
+        value: "Minecraft",
+        key: "/minecraft",
+      },
+      {
+        value: "VPS Linux",
+        key: "/vps",
+      },
+      {
+        value: "Servidores de Voz",
+        key: "/voice",
+      },
+      {
+        value: "Bots Discord",
+        key: "/discord",
+      },
+      {
+        value: "Hosting Web",
+        key: "/web",
+      },
+    ],
+    [
+      {
+        value: "Área de Clientes",
+        key: "https://billing.pyronode.com/clientarea.php",
+      },
+      {
+        value: "Panel de Juegos",
+        key: "https://panel.pyronode.com",
+      },
+    ],
+  ],
   pages: {
     minecraft: {
       hero: {
@@ -883,11 +917,11 @@ const initialState = {
 
               {
                 photo: "https://i.imgur.com/8iFkQ8X.png",
-                value: "Almacenamiento",
+                value: "Storage",
               },
               {
                 photo: "https://i.imgur.com/S4BAJ8e.png",
-                value: "Memoria RAM",
+                value: "RAM",
               },
               {
                 photo: "https://i.imgur.com/LkHBcaG.png",

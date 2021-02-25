@@ -58,7 +58,7 @@ const CarouselItem = ({ content, isInPage, isMobile, isInMainCarousel }) => {
           <h2>{content.subtitle}</h2>
           <p>{content.desc}</p>
 
-          {!isInPage ? (
+          {isInMainCarousel ? (
             <Link
               className="CarouselItem__td"
               to={content.buttonUrl !== undefined ? content.buttonUrl : "/"}
@@ -66,12 +66,7 @@ const CarouselItem = ({ content, isInPage, isMobile, isInMainCarousel }) => {
               <span className="CarouselItem__button">Ver más</span>
             </Link>
           ) : (
-            <a
-              className="CarouselItem__td"
-              href={content.buttonUrl !== undefined ? content.buttonUrl : "#"}
-            >
-              <span className="CarouselItem__button">{content.buttonText}</span>
-            </a>
+            <></>
           )}
         </div>
         <div className="CarouselItem__photo">

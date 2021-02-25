@@ -19,10 +19,7 @@
 .Carousel__zIndex {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(100px, 10%) minmax(800px, 80%) minmax(
-      100px,
-      10%
-    );
+  grid-template-columns: minmax(0, 10%) minmax(0, 80%) minmax(0, 10%);
   grid-template-rows: minmax(0, 100%);
   z-index: 2;
   max-height: 100%;

@@ -7,45 +7,87 @@
 
 .VPS__Page .Web__plans {
   width: 80%;
+  flex-direction: column;
 }
 
-.VPS__Page .WebPlanItem__container-last_child {
+.VPS__Page .WebPlanItem__container {
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.VPS__Page .WebPlanItem__item {
+  flex-direction: row;
+}
+
+.VPS__Page .WebPlanItem__container {
+  flex-direction: row;
+}
+
+.VPS__Page .WebPlanItem__row {
+  border: 0;
+  border-right: 0.7px solid rgba(255, 255, 255, 0.7);
+}
+
+.VPS__Page .WebPlanItem__container-first_child > div {
+  flex-direction: row;
+  justify-content: center;
+}
+
+.VPS__Page .WebPlanItem__container-first_child > div img {
+  width: 20%;
+  margin: 0 5%;
+}
+
+/* .VPS__Page .WebPlanItem__container-last_child {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-}
+} */
 
+/* 
 .VPS__Page .WebPlanItem__row-5_5 {
   border-bottom-right-radius: 20px;
-}
+} */
 
-.VPS__Page .WebPlanItem__container-first_child {
+/* .VPS__Page .WebPlanItem__container-first_child {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-}
+} */
 
-.WebPlanItem__row-0_0,
-.WebPlanItem__row-1_0,
-.WebPlanItem__row-2_0,
-.WebPlanItem__row-3_0,
-.WebPlanItem__row-4_0,
-.WebPlanItem__row-5_0,
-.WebPlanItem__row-6_0,
-.WebPlanItem__row-7_0,
-.WebPlanItem__row-8_0 {
+.VPS__Page .WebPlanItem__row-0_0,
+.VPS__Page .WebPlanItem__row-1_0,
+.VPS__Page .WebPlanItem__row-2_0,
+.VPS__Page .WebPlanItem__row-3_0,
+.VPS__Page .WebPlanItem__row-4_0,
+.VPS__Page .WebPlanItem__row-5_0 {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 }
 
+.VPS__Page .WebPlanItem__row-0_2,
+.VPS__Page .WebPlanItem__row-1_2,
+.VPS__Page .WebPlanItem__row-2_2,
+.VPS__Page .WebPlanItem__row-3_2,
+.VPS__Page .WebPlanItem__row-4_2,
+.VPS__Page .WebPlanItem__row-5_2 {
+  flex-direction: column;
+}
+
+.VPS__Page .WebPlanItem__row-0_2 span,
+.VPS__Page .WebPlanItem__row-1_2 span,
+.VPS__Page .WebPlanItem__row-2_2 span,
+.VPS__Page .WebPlanItem__row-3_2 span,
+.VPS__Page .WebPlanItem__row-4_2 span,
+.VPS__Page .WebPlanItem__row-5_2 span {
+  font-size: 1vw;
+  color: rgba(255, 255, 255, 0.5);
+}
+
 .VPS__Page .WebPlanItem__row-0_0 p,
-.VPS__Page .WebPlanItem__row-1_0 p,
-.VPS__Page .WebPlanItem__row-2_0 p,
-.VPS__Page .WebPlanItem__row-3_0 p,
-.VPS__Page .WebPlanItem__row-4_0 p,
-.VPS__Page .WebPlanItem__row-5_0 p,
-.VPS__Page .WebPlanItem__row-6_0 p,
-.VPS__Page .WebPlanItem__row-7_0 p,
-.VPS__Page .WebPlanItem__row-8_0 p {
+.VPS__Page .WebPlanItem__row-0_1 p,
+.VPS__Page .WebPlanItem__row-0_2 p,
+.VPS__Page .WebPlanItem__row-0_3 p,
+.VPS__Page .WebPlanItem__row-0_4 p {
   font-size: 1vw;
   font-weight: 600;
   font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -55,70 +97,36 @@
   margin-left: 5%;
 }
 
-.VPS__Page .WebPlanItem__row-0_0 img,
-.VPS__Page .WebPlanItem__row-1_0 img,
-.VPS__Page .WebPlanItem__row-2_0 img,
-.VPS__Page .WebPlanItem__row-3_0 img,
-.VPS__Page .WebPlanItem__row-4_0 img,
-.VPS__Page .WebPlanItem__row-5_0 img,
-.VPS__Page .WebPlanItem__row-6_0 img,
-.VPS__Page .WebPlanItem__row-7_0 img,
-.VPS__Page .WebPlanItem__row-8_0 img {
-  width: 10%;
-  margin-left: 9%;
-}
-
-.VPS__Page .WebPlanItem__row-0_1 p,
-.VPS__Page .WebPlanItem__row-0_2 p,
-.VPS__Page .WebPlanItem__row-0_3 p,
-.VPS__Page .WebPlanItem__row-0_4 p,
-.VPS__Page .WebPlanItem__row-0_5 p {
+.VPS__Page .WebPlanItem__row-1_0 p,
+.VPS__Page .WebPlanItem__row-2_0 p,
+.VPS__Page .WebPlanItem__row-3_0 p,
+.VPS__Page .WebPlanItem__row-4_0 p,
+.VPS__Page .WebPlanItem__row-5_0 p {
   text-transform: uppercase;
   font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 2vw;
+  font-size: 1.65vw;
   border-bottom: 1px solid #e87840;
   transition: 0.5s;
-}   
+}
 
-.VPS__Page .WebPlanItem__row-0_1 p:hover,
-.VPS__Page .WebPlanItem__row-0_2 p:hover,
-.VPS__Page .WebPlanItem__row-0_3 p:hover,
-.VPS__Page .WebPlanItem__row-0_4 p:hover,
-.VPS__Page .WebPlanItem__row-0_5 p:hover {
+.VPS__Page .WebPlanItem__row-1_0 p:hover,
+.VPS__Page .WebPlanItem__row-2_0 p:hover,
+.VPS__Page .WebPlanItem__row-3_0 p:hover,
+.VPS__Page .WebPlanItem__row-4_0 p:hover,
+.VPS__Page .WebPlanItem__row-5_0 p:hover {
   transform: scale(1.1);
 }
 
-.VPS__Page .WebPlanItem__row-4_1 p,
-.VPS__Page .WebPlanItem__row-4_2 p,
-.VPS__Page .WebPlanItem__row-4_3 p,
-.VPS__Page .WebPlanItem__row-4_4 p,
-.VPS__Page .WebPlanItem__row-4_5 p {
-  text-transform: uppercase;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.933);
-  color: #e87840;
-  transition: 0.5s;
+.VPS__Page .WebPlanItem__row-0_5,
+.VPS__Page .WebPlanItem__row-1_5,
+.VPS__Page .WebPlanItem__row-2_5,
+.VPS__Page .WebPlanItem__row-3_5,
+.VPS__Page .WebPlanItem__row-4_5,
+.VPS__Page .WebPlanItem__row-5_5 {
+  border: 0;
 }
 
-.VPS__Page .WebPlanItem__row-4_1 p:hover,
-.VPS__Page .WebPlanItem__row-4_2 p:hover,
-.VPS__Page .WebPlanItem__row-4_3 p:hover,
-.VPS__Page .WebPlanItem__row-4_4 p:hover,
-.VPS__Page .WebPlanItem__row-4_5 p:hover {
-  transform: scale(1.1);
-}
-
-.WebPlanItem__button {
-  width: 70%;
-  height: 60%;
-  background: #e87840;
-  border-radius: 12px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.WebPlanItem__button a {
-  color: white;
-  text-decoration: none;
+.VPS__Page .WebPlanItem__container-last_child {
+  border-bottom: 0;
 }

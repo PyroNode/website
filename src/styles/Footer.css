@@ -24,17 +24,17 @@
   padding-top: 1%;
 }
 
-.footer h1 {
-  font-size: 2.4vw;
+.footer h2 {
+  font-size: 1.8vw;
 }
 
 .footer p {
   margin-top: 2%;
-  font-size: 1.2vw;
+  font-size: 0.95vw;
 }
 
 .footer__redes div {
-  width: 100%;
+  width: 75%;
   height: 100%;
   display: flex;
   justify-content: start;
@@ -42,9 +42,14 @@
   flex-direction: row;
 }
 
+.footer__redes a {
+  margin-right: 5%;
+}
+
 .footer__redes div img {
   margin-top: 30%;
 }
+
 .footer__links {
   padding-top: 1%;
   width: 60%;
@@ -68,4 +73,5 @@
 
 .footer a {
   color: white;
+  text-decoration: none;
 }

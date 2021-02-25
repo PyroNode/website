@@ -47,7 +47,7 @@ const PlansController = ({ plans, activePlans, isMobile }) => {
           })}
         </div>
       </div>
-      <div className="Plans__container-details">
+      <div id="planes" className="Plans__container-details">
         <Fade className="react-reveal">
           <PlanDetails
             change={change}

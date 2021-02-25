@@ -91,7 +91,11 @@ const Carousel = ({
           </div>
           <div className={customClass}>
             {active_item !== undefined && (
-              <CarouselItem isInPage={false} content={active_item} />
+              <CarouselItem
+                isInMainCarousel
+                isInPage={false}
+                content={active_item}
+              />
             )}
           </div>
 

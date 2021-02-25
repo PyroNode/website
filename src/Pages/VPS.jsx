@@ -44,6 +44,7 @@ const VPS = ({ hero, plans }) => {
                       lengthX={plans.length}
                       lengthY={item.rows.length}
                       isMobile
+                      isVPS
                     />
                   );
                 })}
@@ -79,6 +80,7 @@ const VPS = ({ hero, plans }) => {
                     itemIndex={plans.indexOf(item)}
                     lengthX={plans.length}
                     lengthY={item.rows.length}
+                    isVPS={true}
                   />
                 );
               })}

@@ -40,7 +40,7 @@ const Minecraft = ({ hero }) => {
         <div className="Minecraft__Page">
           <div className="Minecraft__hero-container">
             <div className="Minecraft__hero">
-              <CarouselItem isInPage content={hero} />
+              <CarouselItem isInMainCarousel={false} isInPage content={hero} />
             </div>
           </div>
           <PlansController activePlans={2} />

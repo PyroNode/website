@@ -22,7 +22,6 @@ const TrustPilotCarousel = ({
   let intervalID = 0;
 
   useEffect(() => {
-   
     if (firstElement) {
       setActiveTPItem(index);
       setClass("TrustPilot__review active transition");
@@ -85,18 +84,21 @@ const TrustPilotCarousel = ({
                 "Loading"
               )}
             </div>
-          </div>
 
-          <div className="TrustPilot__buttons-container">
-            <div
-              className="TrustPilot__button button1"
-              onClick={handleBackIndex}
-            >
-              <img src={right} alt="" />
-            </div>
+            <div className="TrustPilot__buttons-container">
+              <div
+                className="TrustPilot__button button1"
+                onClick={handleBackIndex}
+              >
+                <img src={right} alt="" />
+              </div>
 
-            <div className="TrustPilot__button button2" onClick={handleUpIndex}>
-              <img src={left} alt="" />
+              <div
+                className="TrustPilot__button button2"
+                onClick={handleUpIndex}
+              >
+                <img src={left} alt="" />
+              </div>
             </div>
           </div>
 

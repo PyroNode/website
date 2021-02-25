@@ -86,3 +86,90 @@
 .Header__links .Header__fade {
   opacity: 0;
 }
+
+.Header__product-hover {
+  position: absolute;
+  top: 90%;
+  /* right: -15%; */
+  right: 14.6vw;
+  background: rgba(35, 39, 42, 1);
+  color: white;
+  transition: 0.5s;
+  opacity: 0;
+  border-radius: 4px;
+}
+
+.Header__pages-hover {
+  position: absolute;
+  top: 90%;
+  /* right: -15%; */
+  right: 5.85vw;
+  background: rgba(35, 39, 42, 1);
+  color: white;
+  transition: 0.5s;
+  opacity: 0;
+  border-radius: 4px;
+}
+
+.Header__Productos,
+.Header__pages {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Header__product-hover,
+.Header__pages-hover {
+  transition-delay: 50ms;
+}
+
+.Header__Productos:hover ~ .Header__product-hover {
+  opacity: 1;
+  /* right: 14.6vw; */
+}
+
+.Header__Pages:hover ~ .Header__pages-hover {
+  opacity: 1;
+  /* right: 5.85vw; */
+}
+
+.Header__links .Header__Inicio,
+.Header__links .Header__Productos,
+.Header__links .Header__Pages {
+  width: 8vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.Header__Productos:hover {
+  width: 12.5vw;
+}
+
+.Header__Pages:hover .Header__links .Header__Inicio,
+.Header__Pages:hover .Header__links .Header_Pages {
+  width: 8vw;
+}
+
+.Header__Pages:hover {
+  width: 12.5vw;
+}
+
+.Header__Pages:hover .Header__links .Header__Inicio,
+.Header__Pages:hover .Header__links .Header_Productos {
+  width: 8vw;
+}
+
+.Header__product-hover > a > p {
+  font-size: 0.9vw;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.Header__pages-hover > a > p {
+  font-size: 0.9vw;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
