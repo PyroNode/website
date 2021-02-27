@@ -1237,11 +1237,42 @@ const initialState = {
             title: "AntiDDoS",
             icon: "https://i.imgur.com/8iFkQ8X.png",
           },
-
           {
             title: "Instalación en 120s",
             icon: "https://i.imgur.com/Ak3icRE.png",
           },
+          {
+            title: "Soporte de calidad",
+            icon: "https://i.imgur.com/3Sk4emg.png",
+          },
+          {
+            title: "Uptime 99.9%",
+            icon: "https://i.imgur.com/0Zgy6yY.png",
+          },
+        ],
+      ],
+      mobileFeatures: [
+        [
+          {
+            title: "1Gbps Uplink",
+            icon: "https://i.imgur.com/oDCRwO4.png",
+          },
+          {
+            title: "Virtualización KVM",
+            icon: "https://i.imgur.com/De6y63y.png",
+          },
+        ],
+        [
+          {
+            title: "AntiDDoS",
+            icon: "https://i.imgur.com/8iFkQ8X.png",
+          },
+          {
+            title: "Instalación en 120s",
+            icon: "https://i.imgur.com/Ak3icRE.png",
+          },
+        ],
+        [
           {
             title: "Soporte de calidad",
             icon: "https://i.imgur.com/3Sk4emg.png",

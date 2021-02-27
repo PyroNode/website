@@ -1044,6 +1044,18 @@
     padding-top: 5%;
   }
 
+  .VPS__Page .VPS__Features {
+    height: 90vw;
+  }
+
+  .VPS__Page .VPS__Features-column {
+    height: 33.3%;
+  }
+
+  .VPS__Page .PlanDetails__item h1 {
+    font-size: 3vw;
+  }
+
   /* WEB */
 
   .Web__Page .Web__plans-container {

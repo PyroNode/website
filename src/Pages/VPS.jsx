@@ -10,7 +10,7 @@ import "../styles/VPS.css";
 import { connect } from "react-redux";
 import FeatureItem from "../components/FeatureItem";
 
-const VPS = ({ hero, plans, mobilePlans, features }) => {
+const VPS = ({ hero, plans, mobilePlans, features, mobileFeatures }) => {
   const [height, setHeight] = React.useState(0);
   const [width, setWidth] = React.useState(0);
 
@@ -46,7 +46,27 @@ const VPS = ({ hero, plans, mobilePlans, features }) => {
                 })}
               </div>
             </div>
-            <PoweredBy cPanel isMobile />
+            <div className="VPS__Features">
+              {mobileFeatures.map((feature) => {
+                return (
+                  <>
+                    <div className="VPS__Features-column">
+                      {feature.map((item) => {
+                        return (
+                          <FeatureItem
+                            item={item}
+                            length={feature.length - 1}
+                            all={feature}
+                            change={true}
+                            contentID={0}
+                          />
+                        );
+                      })}
+                    </div>
+                  </>
+                );
+              })}
+            </div>
           </div>
         </Layout>
       </>
@@ -104,7 +124,6 @@ const VPS = ({ hero, plans, mobilePlans, features }) => {
               );
             })}
           </div>
-          
         </div>
       </Layout>
     </>
@@ -117,6 +136,7 @@ const mapStateToProps = (state) => {
     plans: state.pages.vps.plans.list,
     mobilePlans: state.pages.vps.plans.mobileList,
     features: state.pages.vps.features,
+    mobileFeatures: state.pages.vps.mobileFeatures
   };
 };
 
