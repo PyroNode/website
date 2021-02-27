@@ -45,11 +45,12 @@
 }
 
 .footer__redes a {
-  margin-right: 5%;
+  margin-right: 7.5%;
 }
 
 .footer__redes div img {
   margin-top: 30%;
+  height: 20%;
 }
 
 .footer__links {

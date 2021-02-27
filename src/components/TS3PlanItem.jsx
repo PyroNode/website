@@ -35,7 +35,12 @@ const TS3PlanItem = ({ content }) => {
 
           <div className="TS3Planitem__buttonSide">
             <div className="TS3PlanItem__button-container">
-              <h1>{content.buttonText.toUpperCase()}</h1>
+              <a
+                style={{ textDecoration: "none", color: "white" }}
+                href={content.buttonUrl}
+              >
+                <h1>{content.buttonText.toUpperCase()}</h1>
+              </a>
             </div>
           </div>
         </div>

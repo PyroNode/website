@@ -282,7 +282,7 @@ const initialState = {
                       best_option: false,
                       recommended: false,
                       recommended_for_mods: false,
-                      url: "https://billing.pyronode.com/cart.php?a=add&pid=24",
+                      url: "https://billing.pyronode.com/cart.php?a=add&pid=13",
                       specs: [
                         {
                           key: "Ram",
@@ -300,7 +300,7 @@ const initialState = {
                       best_option: false,
                       recommended: false,
                       recommended_for_mods: false,
-                      url: "https://billing.pyronode.com/cart.php?a=add&pid=25",
+                      url: "https://billing.pyronode.com/cart.php?a=add&pid=16",
                       specs: [
                         {
                           key: "Ram",
@@ -688,7 +688,7 @@ const initialState = {
         ],
         list: [
           {
-            title: "TS3 INICIAL",
+            title: "TEAMSPEAK3",
             subtitle: "Hosteado en Europa",
             photo: "https://i.imgur.com/u2cduOE.png",
             desc: [
@@ -701,9 +701,10 @@ const initialState = {
             ],
             price: "0.99€",
             buttonText: "Ver más",
+            buttonUrl: "https://billing.pyronode.com/cart.php?a=add&pid=32",
           },
           {
-            title: "TS3 CUSTOM",
+            title: "TEASPEAK",
             subtitle: "Hosteado en Europa",
             photo: "https://i.imgur.com/u2cduOE.png",
             desc: [
@@ -716,6 +717,7 @@ const initialState = {
             ],
             price: "3.99€",
             buttonText: "Ver más",
+            buttonUrl: "https://billing.pyronode.com/cart.php?a=add&pid=31",
           },
         ],
       },
@@ -795,7 +797,7 @@ const initialState = {
                 value: "1GB",
               },
               {
-                value: "2.49€",
+                value: "2.99€",
               },
               {
                 value: "ADQUIRIR",
@@ -893,7 +895,7 @@ const initialState = {
                 value: "Memoria RAM: 1GB",
               },
             ],
-            price: "2,49€",
+            price: "2,99€",
             buttonText: "Ver más",
           },
           {
@@ -1013,7 +1015,7 @@ const initialState = {
               },
               {
                 value: "ADQUIRIR",
-                url: "https://billing.pyronode.com/cart.php?a=add&pid=1",
+                url: "https://billing.pyronode.com/cart.php?a=add&pid=19",
               },
             ],
           },
@@ -1036,7 +1038,7 @@ const initialState = {
               },
               {
                 value: "ADQUIRIR",
-                url: "https://billing.pyronode.com/cart.php?a=add&pid=1",
+                url: "https://billing.pyronode.com/cart.php?a=add&pid=28",
               },
             ],
           },
@@ -1059,7 +1061,7 @@ const initialState = {
               },
               {
                 value: "ADQUIRIR",
-                url: "https://billing.pyronode.com/cart.php?a=add&pid=1",
+                url: "https://billing.pyronode.com/cart.php?a=add&pid=29",
               },
             ],
           },
@@ -1082,7 +1084,7 @@ const initialState = {
               },
               {
                 value: "ADQUIRIR",
-                url: "https://billing.pyronode.com/cart.php?a=add&pid=1",
+                url: "https://billing.pyronode.com/cart.php?a=add&pid=20",
               },
             ],
           },
@@ -1105,7 +1107,7 @@ const initialState = {
               },
               {
                 value: "ADQUIRIR",
-                url: "https://billing.pyronode.com/cart.php?a=add&pid=1",
+                url: "https://billing.pyronode.com/cart.php?a=add&pid=30",
               },
             ],
           },
@@ -1128,6 +1130,7 @@ const initialState = {
             ],
             price: "1,59€",
             buttonText: "Ver más",
+            buttonUrl: "https://billing.pyronode.com/cart.php?a=add&pid=19",
           },
           {
             title: "PLAN CLASSIC",
@@ -1146,6 +1149,7 @@ const initialState = {
             ],
             price: "2,44€",
             buttonText: "Ver más",
+            buttonUrl: "https://billing.pyronode.com/cart.php?a=add&pid=28",
           },
           {
             title: "PLAN NORMAL",
@@ -1164,6 +1168,7 @@ const initialState = {
             ],
             price: "3,07€",
             buttonText: "Ver más",
+            buttonUrl: "https://billing.pyronode.com/cart.php?a=add&pid=29",
           },
           {
             title: "PLAN ADVANCED",
@@ -1182,6 +1187,7 @@ const initialState = {
             ],
             price: "4,33€",
             buttonText: "Ver más",
+            buttonUrl: "https://billing.pyronode.com/cart.php?a=add&pid=20",
           },
           {
             title: "PLAN ULTIMATE",
@@ -1200,6 +1206,7 @@ const initialState = {
             ],
             price: "5,59€",
             buttonText: "Ver más",
+            buttonUrl: "https://billing.pyronode.com/cart.php?a=add&pid=30",
           },
         ],
       },
