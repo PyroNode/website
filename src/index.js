@@ -746,7 +746,7 @@ const initialState = {
         subtitle: "¡Para mostrar tus proyectos!",
         desc:
           "Da vida a tu página personal o a tus proyectos mostrando una página web y teniendo un correo profesional. Con nuestro alojamiento web podrás hacer esto sin complicaciones",
-        photo: "https://i.imgur.com/AijqMdc.png",
+        photo: "https://i.imgur.com/OVRS9MR.png",
         buttonUrl: "#planes",
         buttonText: "Ver planes",
       },
@@ -911,7 +911,7 @@ const initialState = {
               },
               {
                 value: "Memoria RAM: 1GB",
-              }
+              },
             ],
             price: "2,49€",
             buttonText: "Ver más",
@@ -979,8 +979,7 @@ const initialState = {
         subtitle: "¡Para lo que quieras!",
         desc:
           "Da vida a tu página personal o a tus proyectos mostrando una página web, o utilizala para lo que quieras. Con nuestro alojamiento de VPS podrás hacer esto sin complicaciones",
-        photo:
-          "https://static.wixstatic.com/media/c545ec_0f6c90577fa44db5a9ec7ad78479e366~mv2.png/v1/fill/w_381,h_319,al_c,q_85,usm_0.66_1.00_0.01/PngItem_3577264.webp",
+        photo: "https://i.imgur.com/IcahspC.png",
         buttonUrl: "#planes",
         buttonText: "Ver planes",
       },
@@ -1224,6 +1223,35 @@ const initialState = {
           },
         ],
       },
+      features: [
+        [
+          {
+            title: "1Gbps Uplink",
+            icon: "https://i.imgur.com/oDCRwO4.png",
+          },
+          {
+            title: "Virtualización KVM",
+            icon: "https://i.imgur.com/De6y63y.png",
+          },
+          {
+            title: "AntiDDoS",
+            icon: "https://i.imgur.com/8iFkQ8X.png",
+          },
+
+          {
+            title: "Instalación en 120s",
+            icon: "https://i.imgur.com/Ak3icRE.png",
+          },
+          {
+            title: "Soporte de calidad",
+            icon: "https://i.imgur.com/3Sk4emg.png",
+          },
+          {
+            title: "Uptime 99.9%",
+            icon: "https://i.imgur.com/0Zgy6yY.png",
+          },
+        ],
+      ],
     },
   },
 };

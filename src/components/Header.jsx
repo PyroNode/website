@@ -237,10 +237,10 @@ const Header = ({ width, dark, headerItems }) => {
                 <p>Minecraft</p>
               </Link>
               <Link to="/vps">
-                <p>VPS</p>
+                <p>VPS Linux</p>
               </Link>
               <Link to="/voice">
-                <p>TS3</p>
+                <p>Servidores de Voz</p>
               </Link>
               <Link to="/discord">
                 <p>Bots Discord</p>

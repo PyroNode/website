@@ -10,6 +10,33 @@
   flex-direction: column;
 }
 
+.Web__hero .CarouselItem__photo img {
+  margin-bottom: 35%;
+  height: 55%;
+}
+
+.VPS__Page .VPS__Features {
+  height: 18.5vw;
+  width: 85%;
+  background: rgba(35, 39, 42, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-bottom: 5%;
+  border-radius: 12px;
+}
+
+.VPS__Page .VPS__Features-column {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
 .VPS__Page .WebPlanItem__container {
   border: 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.7);
