@@ -162,7 +162,7 @@ const initialState = {
         title: "Hosting de Minecraft",
         subtitle: "¡Más adquirido!",
         desc:
-          "Con un par de clicks, podrás tener tu servidor activo para jugar con tus amigos.",
+          "Con un par de clicks, podrás tener tu servidor activo para jugar con tus amigos. Olvidate de las colas, lag y complicaciones. PyroNode te da casi todo hecho",
         photo: "https://i.imgur.com/6Y3eLOb.png",
         buttonUrl: "#planes",
         buttonText: "Ver planes",
@@ -273,26 +273,6 @@ const initialState = {
                     recommended_for_mods: false,
                     url: "https://billing.pyronode.com/cart.php?a=add&pid=12",
                   },
-                  // {
-                  //   title: "Gold",
-                  //   price: "4.49€",
-                  //   ram: "6GB",
-                  //   icon: "https://i.imgur.com/abkLYyY.png",
-                  //   best_option: false,
-                  //   recommended: true,
-                  //   recommended_for_mods: false,
-                  //   url: "https://billing.pyronode.com/cart.php?a=add&pid=13",
-                  // },
-                  // {
-                  //   title: "Diamond",
-                  //   price: "7.49€",
-                  //   ram: "6GB",
-                  //   icon: "https://i.imgur.com/ptAxyZS.png",
-                  //   best_option: false,
-                  //   recommended: false,
-                  //   recommended_for_mods: false,
-                  //   url: "https://billing.pyronode.com/cart.php?a=add&pid=16",
-                  // },
                 ],
                 cards: {
                   list: [
@@ -677,7 +657,7 @@ const initialState = {
         title: "Servidores de TS3",
         subtitle: "¡Para hablar con tus amigos!",
         desc:
-          "En PyroNode te facilitamos un servidor ts3 para poder hablar con tus amigos, elige el plan adecuado, o el número de slots y empieza a comunicarte",
+          "En PyroNode te facilitamos un servidor de voz para poder hablar con tus amigos, elige el plan adecuado, o el número de slots y empieza a comunicarte",
         photo:
           "https://i.ibb.co/YhVz6BY/b941bc1dfe379db6cc1f2acc5a612f41-4x-1.png",
         buttonUrl: "#planes",

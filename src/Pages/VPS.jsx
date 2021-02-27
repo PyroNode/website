@@ -55,7 +55,7 @@ const VPS = ({ hero, plans, mobilePlans, features, mobileFeatures }) => {
                         return (
                           <FeatureItem
                             item={item}
-                            length={feature.length - 1}
+                            length={feature.length}
                             all={feature}
                             change={true}
                             contentID={0}
@@ -112,7 +112,7 @@ const VPS = ({ hero, plans, mobilePlans, features, mobileFeatures }) => {
                       return (
                         <FeatureItem
                           item={item}
-                          length={feature.length - 1}
+                          length={feature.length}
                           all={feature}
                           change={true}
                           contentID={0}
@@ -136,7 +136,7 @@ const mapStateToProps = (state) => {
     plans: state.pages.vps.plans.list,
     mobilePlans: state.pages.vps.plans.mobileList,
     features: state.pages.vps.features,
-    mobileFeatures: state.pages.vps.mobileFeatures
+    mobileFeatures: state.pages.vps.mobileFeatures,
   };
 };
 

@@ -14,7 +14,7 @@ const PlanDetails = ({ content, change, isMobile }) => {
   const featuresCopy = content.include.feature;
   const machines = content.include.machines;
   const machinesLength =
-    machines.list.length / 2 + (machines.cards.list.length * 3) / 2 + 1;
+    machines.list.length / 2 + (machines.cards.list.length * 3) / 2;
   const fadeR = "right";
   const fadeL = "left";
   let fadeDirection = fadeR;
@@ -137,23 +137,6 @@ const PlanDetails = ({ content, change, isMobile }) => {
                 </Fade>
               );
             })}
-
-            <Fade className="MachineItem__single" direction="up" triggerOnce>
-              <MachineItem
-                key={
-                  machines.cards.list.indexOf(
-                    machines.cards.list[machines.cards.list.length - 1]
-                  ) +
-                  machines.list.indexOf(
-                    machines.list[machines.list.length - 1]
-                  ) +
-                  1
-                }
-                content={machines.cards.single}
-                isSingle
-                isMobile
-              />
-            </Fade>
 
             <Fade className="MachineItem__single" direction="up" triggerOnce>
               <MachineItem
