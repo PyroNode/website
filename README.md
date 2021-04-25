@@ -16,7 +16,7 @@
 
 ### 🏠 [Homepage](https://github.com/brunoocal/pyronode)
 
-### ✨ [Demo](https://pyronode.com)
+### ✨ [Website](https://pyronode.com)
 
 ## Install
 
