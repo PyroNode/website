@@ -17,8 +17,6 @@ const VPS = ({ hero, plans, mobilePlans, features, mobileFeatures }) => {
   setTimeout(() => {
     setHeight(document.body.scrollHeight);
     setWidth(document.body.scrollWidth);
-    console.log(height);
-    console.log(width);
   }, 0);
 
   if (width <= 800) {
@@ -88,7 +86,6 @@ const VPS = ({ hero, plans, mobilePlans, features, mobileFeatures }) => {
           <div className="Web__plans-container">
             <div className="Web__plans">
               {plans.map((item) => {
-                console.log(plans.length);
                 return (
                   <WebPlanItem
                     key={plans.indexOf(item)}

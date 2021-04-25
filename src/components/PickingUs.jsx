@@ -7,7 +7,7 @@ const PickingUs = ({ items }) => {
     <div className="pickUs__all">
       <div className="pickUs__flex">
         <div className="pickUs__title">
-          <h1>¿PORQUÉ ELEGIR PYRONODE?</h1>
+          <h1>¿POR QUÉ ELEGIR PYRONODE?</h1>
         </div>
 
         <Fade right cascade>

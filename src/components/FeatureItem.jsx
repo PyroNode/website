@@ -15,7 +15,6 @@ const FeatureItem = ({ item, length, all, change, contentID }) => {
 
   React.useEffect(() => {
     if (contentID === 1 && all[all.length - 1] === item && length === 5) {
-      console.log("ret");
       return true;
     }
 
@@ -32,16 +31,13 @@ const FeatureItem = ({ item, length, all, change, contentID }) => {
     if (!sameContentID) {
       if (contentID === 1 && all[all.length - 1] === item && length === 5) {
         setSameContentID(true);
-        console.log(index);
         const id = setTimeout(() => {
           setOpacity(0);
         }, 0 + index);
-        console.log("op0");
 
         const id2 = setTimeout(() => {
           setOpacity(1);
         }, 1000);
-        console.log("op1");
 
         return () => {
           clearTimeout(id);

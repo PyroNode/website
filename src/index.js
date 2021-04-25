@@ -33,8 +33,7 @@ const initialState = {
       subtitle: "Desde 1,49€/mes",
       desc:
         "¿Vas a otro nivel? Una VPS puede ser tu opción. Nuestras VPS están protegidas con la mejor seguridad y están optimizadas para que no tengas que preocuparte por nada, simplemente usar.",
-      photo:
-        "https://static.wixstatic.com/media/c545ec_0f6c90577fa44db5a9ec7ad78479e366~mv2.png/v1/fill/w_381,h_319,al_c,q_85,usm_0.66_1.00_0.01/PngItem_3577264.webp",
+      photo: "https://i.imgur.com/IcahspC.png",
       buttonUrl: "/vps",
     },
     {
@@ -43,8 +42,7 @@ const initialState = {
       subtitle: "Desde 2,49€/mes",
       desc:
         "Da vida a tu página personal o a tus proyectos mostrando una página web y teniendo un correo profesional. Con nuestro alojamiento web podrás hacer esto sin complicaciones.",
-      photo:
-        "https://static.wixstatic.com/media/c545ec_eb3ed284b8b546a2a8002bd32cff390b~mv2.png/v1/fill/w_374,h_374,al_c,q_85,usm_0.66_1.00_0.01/dedicado.webp",
+      photo: "https://i.imgur.com/OVRS9MR.png",
       buttonUrl: "/web",
     },
   ],
@@ -1274,10 +1272,7 @@ const initialState = {
   },
 };
 
-const composeEnhancers =
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__();
-
-const store = createStore(reducer, initialState, composeEnhancers);
+const store = createStore(reducer, initialState);
 
 ReactDOM.render(
   <Provider store={store}>

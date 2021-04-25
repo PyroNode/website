@@ -15,8 +15,6 @@ const Layout = (props) => {
   setTimeout(() => {
     setHeight(document.body.scrollHeight);
     setWidth(document.body.scrollWidth);
-    console.log(height);
-    console.log(width);
   }, 0);
 
   let styles = {

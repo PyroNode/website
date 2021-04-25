@@ -49,6 +49,9 @@ const Footer = () => {
             <a href="https://panel.pyronode.com/">
               <p>Panel de Juegos</p>
             </a>
+            <a href="https://pyronode.com/tos.pdf">
+              <p>Terminos y condiciones</p>
+            </a>
           </div>
         </div>
         <div className="footer__logo">

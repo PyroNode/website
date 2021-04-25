@@ -136,7 +136,6 @@ const Header = ({ width, dark, headerItems }) => {
                   {headerItems.map((array) => {
                     if (showHeaderItem) {
                       if (headerItems.indexOf(array) === 0) {
-                        console.log(array);
                         return (
                           <>
                             <Fade cascade damping={0.2}>
@@ -160,13 +159,11 @@ const Header = ({ width, dark, headerItems }) => {
                     }
                     if (showHeaderItem2) {
                       if (headerItems.indexOf(array) === 1) {
-                        console.log(array);
 
                         return (
                           <>
                             <Fade cascade damping={0.2}>
                               {array.map((keyvalue) => {
-                                console.log(keyvalue);
                                 return (
                                   <>
                                     <a

@@ -16,8 +16,6 @@ const WebHosting = ({ hero, plans, mobilePlans }) => {
   setTimeout(() => {
     setHeight(document.body.scrollHeight);
     setWidth(document.body.scrollWidth);
-    console.log(height);
-    console.log(width);
   }, 0);
 
   if (width <= 800) {
@@ -67,7 +65,6 @@ const WebHosting = ({ hero, plans, mobilePlans }) => {
           <div className="Web__plans-container">
             <div className="Web__plans">
               {plans.map((item) => {
-                console.log(plans.length);
                 return (
                   <WebPlanItem
                     key={plans.indexOf(item)}

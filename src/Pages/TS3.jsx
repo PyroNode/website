@@ -16,8 +16,6 @@ const TS3 = ({ hero, features, plans }) => {
   setTimeout(() => {
     setHeight(document.body.scrollHeight);
     setWidth(document.body.scrollWidth);
-    console.log(height);
-    console.log(width);
   }, 0);
 
   if (width <= 800) {

@@ -13,8 +13,6 @@ const Minecraft = ({ hero }) => {
   setTimeout(() => {
     setHeight(document.body.scrollHeight);
     setWidth(document.body.scrollWidth);
-    console.log(height);
-    console.log(width);
   }, 0);
 
   if (width <= 800) {

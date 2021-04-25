@@ -14,7 +14,6 @@ const PlansController = ({ plans, activePlans, isMobile }) => {
   for (let i = 0; i < plans.length; i++) {
     const element = plans[i];
     if (i <= activePlans - 1) {
-      console.log(element);
       actPlansArray.push(element);
     }
   }
